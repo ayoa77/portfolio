@@ -2,9 +2,11 @@
   "name": "portfolio",
   "version": "1.0.0",
   "description": "",
+  "repository":"https://github.com/ayoa77/portfolio.git",
   "main": "app.js",
   "scripts": {
     "server": "gulp nodemon",
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
