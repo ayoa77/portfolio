@@ -1,0 +1,778 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(name='description', content='Responsive Personal Portfolio vCard Template')
+    meta(name='author', content='Ahmed Faruk')
+    title Ayo Amadi
+    // Web Fonts
+    link(href='http://fonts.googleapis.com/css?family=Roboto:400,300,500,700', rel='stylesheet', type='text/css')
+    // Bootstrap core CSS
+    link(href='public/bootstrap/css/bootstrap.min.css', rel='stylesheet', media='screen')
+    // Font Awesome CSS
+    link(href='public/css/font-awesome.min.css', rel='stylesheet', media='screen')
+    // Animate css
+    link(href='public/css/animate.css', rel='stylesheet')
+    // Magnific css
+    link(href='public/css/magnific-popup.css', rel='stylesheet')
+    // Custom styles CSS
+    link(href='public/css/style.css', rel='stylesheet', media='screen')
+    // Responsive CSS
+    link(href='public/css/responsive.css', rel='stylesheet')
+    // HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
+    // WARNING: Respond.js doesn't work if you view the page via file://
+    //if lt IE 9
+      script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')
+      script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
+    link(rel='shortcut icon', href='public/images/ico/favicon.png')
+    link(rel='apple-touch-icon-precomposed', sizes='144x144', href='public/images/ico/apple-touch-icon-144-precomposed.png')
+    link(rel='apple-touch-icon-precomposed', sizes='114x114', href='public/images/ico/apple-touch-icon-114-precomposed.png')
+    link(rel='apple-touch-icon-precomposed', sizes='72x72', href='public/images/ico/apple-touch-icon-72-precomposed.png')
+    link(rel='apple-touch-icon-precomposed', href='public/images/ico/apple-touch-icon-57-precomposed.png')
+  body
+    // Preloader
+    #tt-preloader
+      #pre-status
+        .preload-placeholder
+    // Home Section
+    section#home.tt-fullHeight(data-stellar-vertical-offset='50', data-stellar-background-ratio='0.2')
+      .intro
+        .intro-sub Ayo Amadi
+        h1
+          | Web App 
+          span Developer
+        p
+          | I am a forever curious Full-Stack Developer 
+          //- br
+          //- |  I love learning
+          br
+          |  contact me and let's build together.
+        .social-icons
+          ul.list-inline
+            li
+              a(href='https://www.facebook.com/ayodele.amadi')
+                i.fa.fa-facebook
+            li
+              a(href='https://twitter.com/ayoamadi?lang=en')
+                i.fa.fa-twitter
+            li
+              a(href='https://github.com/ayoa77')
+                i.fa.fa-github
+            li
+              a(href='https://stackoverflow.com/users/7806714/ayodele-amadi')
+                i.fa.fa-stack-overflow
+            //- li
+            //-   a(href='#')
+            //-     i.fa.fa-pinterest
+        // /.social-icons
+      .mouse-icon
+        .wheel
+    // End Home Section
+    // Navigation
+    header.header
+      nav.navbar.navbar-custom(role='navigation')
+        .container
+          .navbar-header
+            button.navbar-toggle(type='button', data-toggle='collapse', data-target='#custom-collapse')
+              span.sr-only Toggle navigation
+              span.icon-bar
+              span.icon-bar
+              span.icon-bar
+            a.navbar-brand(href='index.html')
+              img(src='public/images/logo.png', alt='')
+          #custom-collapse.collapse.navbar-collapse
+            ul.nav.navbar-nav.navbar-right
+              li
+                a(href='#home') Home
+              li
+                a(href='#about') About
+              li
+                a(href='#resume') Resume
+              li
+                a(href='#skills') Skills
+              li
+                a(href='#works') Works
+              li
+                a(href='#blog') Blog
+              li
+                a(href='#contact') Contact
+        // .container
+    // End Navigation
+    // About Section
+    section#about.about-section.section-padding
+      .container
+        h2.section-title.wow.fadeInUp About Me
+        .row
+          .col-md-4.col-md-push-8
+            .biography
+              .myphoto
+                img(src='public/images/myphoto.jpg', alt='')
+              ul
+                li
+                  strong Name:
+                  |  Ayo Amadi || 馬艾哲
+                li
+                  strong Date of birth:
+                  |  09 Sep 1989
+                //- li
+                //-   strong Address:
+                //-   |  239/2 Awesome Street, USA
+                li
+                  strong Nationality:
+                  |  American
+                li
+                  strong Phone:
+                  |  (886) 975 878 441
+                li
+                  strong Email:
+                  |  ayodeleamadi@gmail.com
+          // col-md-4
+          .col-md-8.col-md-pull-4
+            .short-info.wow.fadeInUp
+              h3 Objective
+              p
+                | I love creating things and since my talents as an artist are lacking, programming is my outlet. I love that these creations can solve real-life problems, while being fun and intuitive tools to interact with. I am currently searching for more opportunities to further my experience and build more.
+            .short-info.wow.fadeInUp
+              h3 What I Do ?
+              p
+                | I have been working as a web app developer for over a year. I love new tech and further expanding my knowledge in my current set of tools. I originally started with Ruby and Ruby on Rails, but recently I have been more focused on JavaScript and NodeJS. I love my work. 
+              ul.list-check
+                li Backend Engineering
+                li Database Design
+                li API Development
+                li Branding Design
+                li Digital Painting
+                li Video Editing
+            //- .my-signature
+            //-   img(src='public/images/sign.png', alt='')
+            .download-button
+              a.btn.btn-info.btn-lg(href='#contact')
+                i.fa.fa-paper-plane
+                | Send me a message
+              a.btn.btn-primary.btn-lg(href='#')
+                i.fa.fa-download
+                | Download my CV
+        // /.row
+      // /.container
+    // End About Section
+    // Video Section
+    //- section#video.video-section
+    //-   .tf-bg-overlay
+    //-     .container
+    //-       .control
+    //-         .video-intro.text-center
+    //-           button.play-trigger(type='button', data-toggle='modal', data-target='#tour-video')
+    //-             i.fa.fa-play
+    //-           h2 Video Introducing
+    //-         // Video Modal
+    //-         #tour-video.modal.modal-video
+    //-           .modal-dialog.modal-lg
+    //-             .modal-content
+    //-               .modal-header
+    //-                 button.close(type='button', data-dismiss='modal', aria-hidden='true') ×
+    //-                 h4.modal-title Video Tour
+    //-               .modal-body
+    //-                 .video-container
+    //-                   iframe#nofocusvideo(src='http://player.vimeo.com/video/118119037', name='vimeoplayer', width='500', height='281')
+                    // /.video-container
+                  // /.modal-body
+                // /.modal-content
+              // /.modal-dialog
+            // /.modal
+          // /.control
+        // /.container
+      // /.overlay
+    // /.Video Section
+    // Resume Section
+    section#resume.resume-section.section-padding
+      .container
+        h2.section-title.wow.fadeInUp Resume
+        .row
+          .col-md-12
+            .resume-title
+              h3 Education
+            .resume
+              ul.timeline
+                li
+                  .posted-date
+                    span.month 2017
+                  // /posted-date
+                  .timeline-panel.wow.fadeInUp
+                    .timeline-content
+                      .timeline-heading
+                        h3 Web Development Certificate
+                        span Next Academy Web Development Bootcamp, Kuala Lumpur, Malaysia
+                      // /timeline-heading
+                      .timeline-body
+                        p
+                          | After a few years of writing a little bit of HTML and CSS while dabbling in Ruby, I was finally able to fully realize my inclination to becoming a web developer.
+                      // /timeline-body
+                    // /timeline-content
+                  // /timeline-panel
+                li.timeline-inverted
+                  .posted-date
+                    span.month 2014
+                  // /posted-date
+                  .timeline-panel.wow.fadeInUp
+                    .timeline-content
+                      .timeline-heading
+                        h3 TESOL Certificate
+                        span Language Corps, Ho Chi Minh City, Vietnam
+                      // /timeline-heading
+                      .timeline-body
+                        p
+                          | In addition to web development, I am a foodie and I love travelling. So, when I saw my total debt after completing university, I decided teaching English in Vietnam will be a good way to explore these interests further.
+                      // /timeline-body
+                    // /timeline-content
+                  // /timeline-panel
+                li
+                  .posted-date
+                    span.month 2013
+                  // /posted-date
+                  .timeline-panel.wow.fadeInUp
+                    .timeline-content
+                      .timeline-heading
+                        h3 Bachelor's Degree 
+                        span BA in French, Minor in Business, University of Kansas, Kansas, USA
+                      // /timeline-heading
+                      .timeline-body
+                        p
+                          | I worked part-time jobs to help fund my education and and finish my studies in language. Toward the end of my studies, I took a Web Development Course and my intial interest in this field began.
+                      // /timeline-body
+                    // /timeline-content
+                  // /timeline-panel
+        // /row
+        .row
+          .col-md-12
+            .resume-title
+              h3 Experience
+            .resume
+              ul.timeline
+                li.timeline-inverted
+                  .posted-date
+                    span.month June 2017 - Present
+                  // /posted-date
+                  .timeline-panel.wow.fadeInUp
+                    .timeline-content
+                      .timeline-heading
+                        h3 Web App Developer
+                        span Frankish International, Taipei, Taiwan
+                      // /timeline-heading
+                      .timeline-body
+                        p
+                          | I learn by doing and this is where I have learned the most. From working on legacy PHP or Ruby apps to event-sourcing with NodeJS and NoSql, this has been the best learning experience ever. 
+                      // /timeline-body
+                    // /timeline-content
+                  // /timeline-panel
+                li
+                  .posted-date
+                    span.month September 2015 - December 2016
+                  // /posted-date
+                  .timeline-panel.wow.fadeInUp
+                    .timeline-content
+                      .timeline-heading
+                        h3 Educator
+                        span RMIT University, Ho Chi Minh City, Vietnam
+                      // /timeline-heading
+                      .timeline-body
+                        p
+                          | Learning and teaching at possibly the most prestigous University in Vietnam was a priviledge. 
+                      // /timeline-body
+                    // /timeline-content
+                  // /timeline-panel
+              ul.timeline
+                li.timeline-inverted
+                  .posted-date
+                    span.month April 2014 - March 2016
+                  // /posted-date
+                  .timeline-panel.wow.fadeInUp
+                    .timeline-content
+                      .timeline-heading
+                        h3 ESL Teacher
+                        span VUS, Ho Chi Minh City, Vietnam
+                      // /timeline-heading
+                      .timeline-body
+                        p
+                          | The largest English Center in Vietnam was one of the funnest work experiences I have ever had.
+                      // /timeline-body
+                    // /timeline-content
+                  // /timeline-panel        // /row
+      // /.container
+    // End Resume Section
+    // Skills Section
+    section#skills.skills-section.section-padding
+      .container
+        h2.section-title.wow.fadeInUp Skills
+        .row
+          .col-md-6
+            .skill-progress
+              .skill-title
+                h3 NodeJS
+              .progress
+                .progress-bar.six-sec-ease-in-out(role='progressbar', aria-valuenow='90', aria-valuemin='0', aria-valuemax='100')
+                  span 90%
+              // /.progress
+            // /.skill-progress
+            .skill-progress
+              .skill-title
+                h3 Ruby
+              .progress
+                .progress-bar.six-sec-ease-in-out(role='progressbar', aria-valuenow='90', aria-valuemin='0', aria-valuemax='100')
+                  span 90%
+              // /.progress
+            // /.skill-progress
+            .skill-progress
+              .skill-title
+                h3 NoSql
+              .progress
+                .progress-bar.six-sec-ease-in-out(role='progressbar', aria-valuenow='80', aria-valuemin='0', aria-valuemax='100')
+                  span 80%
+              // /.progress
+            // /.skill-progress
+          // /.col-md-6
+          .col-md-6
+            .skill-progress
+              .skill-title
+                h3 SQL
+              .progress
+                .progress-bar.six-sec-ease-in-out(role='progressbar', aria-valuenow='75', aria-valuemin='0', aria-valuemax='100')
+                  span 75%
+              // /.progress
+            // /.skill-progress
+            .skill-progress
+              .skill-title
+                h3 HTML/CSS
+              .progress
+                .progress-bar.six-sec-ease-in-out(role='progressbar', aria-valuenow='85', aria-valuemin='0', aria-valuemax='100')
+                  span 85%
+              // /.progress
+            // /.skill-progress
+            .skill-progress
+              .skill-title
+                h3 JavaScript
+              .progress
+                .progress-bar.six-sec-ease-in-out(role='progressbar', aria-valuenow='80', aria-valuemin='0', aria-valuemax='100')
+                  span 80%
+              // /.progress
+            // /.skill-progress
+          // /.col-md-6
+        // /.row
+        .skill-chart.text-center
+          h3 More skills
+        .row.more-skill.text-center
+          .col-xs-12.col-sm-4.col-md-2
+            .chart(data-percent='70', data-color='e74c3c')
+              span.percent
+              .chart-text
+                span 中文
+          .col-xs-12.col-sm-4.col-md-2
+            .chart(data-percent='75', data-color='3498db')
+              span.percent
+              .chart-text
+                span Creativity
+          .col-xs-12.col-sm-4.col-md-2
+            .chart(data-percent='68', data-color='3498db')
+              span.percent
+              .chart-text
+                span Management
+          .col-xs-12.col-sm-4.col-md-2
+            .chart(data-percent='68', data-color='3498db')
+              span.percent
+              .chart-text
+                span Branding
+          .col-xs-12.col-sm-4.col-md-2
+            .chart(data-percent='68', data-color='3498db')
+              span.percent
+              .chart-text
+                span Marketing
+          .col-xs-12.col-sm-4.col-md-2
+            .chart(data-percent='99', data-color='3498db')
+              span.percent
+              .chart-text
+                span Motivation
+      // /.container
+    // End Skills Section
+    // Works Section
+    section#works.works-section.section-padding
+      .container
+        h2.section-title.wow.fadeInUp Works
+        ul#filter.list-inline
+          li
+            a.active(data-group='all') All
+          li
+            a(data-group='design') Ruby
+          li
+            a(data-group='web') NodeJS
+          li
+            a(data-group='interface') Full-Stack
+          li
+            a(data-group='identety') Backend
+        .row
+          #grid
+            .portfolio-item.col-xs-12.col-sm-4.col-md-3(data-groups='["all", "identety", "interface"]')
+              .portfolio-bg
+                .portfolio
+                  .tt-overlay
+                  .links
+                    a.image-link(href='public/images/works/portfolio-1.jpg')
+                      i.fa.fa-search-plus
+                    a(href='#')
+                      i.fa.fa-link
+                  // /.links
+                  img(src='public/images/works/portfolio-1.jpg', alt='image')
+                  .portfolio-info
+                    h3 Portfolio Title
+                  // /.portfolio-info
+                // /.portfolio
+              // /.portfolio-bg
+            // /.portfolio-item
+            .portfolio-item.col-xs-12.col-sm-4.col-md-3(data-groups='["all", "identety", "web"]')
+              .portfolio-bg
+                .portfolio
+                  .tt-overlay
+                  .links
+                    a.image-link(href='public/images/works/portfolio-2.jpg')
+                      i.fa.fa-search-plus
+                    a(href='#')
+                      i.fa.fa-link
+                  // /.links
+                  img(src='public/images/works/portfolio-2.jpg', alt='image')
+                  .portfolio-info
+                    h3 Portfolio Title
+                  // /.portfolio-info
+                // /.portfolio
+              // /.portfolio-bg
+            // /.portfolio-item
+            .portfolio-item.col-xs-12.col-sm-4.col-md-3(data-groups='["all", "interface"]')
+              .portfolio-bg
+                .portfolio
+                  .tt-overlay
+                  .links
+                    a.image-link(href='public/images/works/portfolio-3.jpg')
+                      i.fa.fa-search-plus
+                    a(href='#')
+                      i.fa.fa-link
+                  // /.links
+                  img(src='public/images/works/portfolio-3.jpg', alt='image')
+                  .portfolio-info
+                    h3 Portfolio Title
+                  // /.portfolio-info
+                // /.portfolio
+              // /.portfolio-bg
+            // /.portfolio-item
+            .portfolio-item.col-xs-12.col-sm-4.col-md-3(data-groups='["all", "identety", "design"]')
+              .portfolio-bg
+                .portfolio
+                  .tt-overlay
+                  .links
+                    a.image-link(href='public/images/works/portfolio-4.jpg')
+                      i.fa.fa-search-plus
+                    a(href='#')
+                      i.fa.fa-link
+                  // /.links
+                  img(src='public/images/works/portfolio-4.jpg', alt='image')
+                  .portfolio-info
+                    h3 Portfolio Title
+                  // /.portfolio-info
+                // /.portfolio
+              // /.portfolio-bg
+            // /.portfolio-item
+            .portfolio-item.col-xs-12.col-sm-4.col-md-3(data-groups='["all", "identety", "design"]')
+              .portfolio-bg
+                .portfolio
+                  .tt-overlay
+                  .links
+                    a.image-link(href='public/images/works/portfolio-5.jpg')
+                      i.fa.fa-search-plus
+                    a(href='#')
+                      i.fa.fa-link
+                  // /.links
+                  img(src='public/images/works/portfolio-5.jpg', alt='image')
+                  .portfolio-info
+                    h3 Portfolio Title
+                  // /.portfolio-info
+                // /.portfolio
+              // /.portfolio-bg
+            // /.portfolio-item
+            .portfolio-item.col-xs-12.col-sm-4.col-md-3(data-groups='["all", "identety", "design"]')
+              .portfolio-bg
+                .portfolio
+                  .tt-overlay
+                  .links
+                    a.image-link(href='public/images/works/portfolio-6.jpg')
+                      i.fa.fa-search-plus
+                    a(href='#')
+                      i.fa.fa-link
+                  // /.links
+                  img(src='public/images/works/portfolio-6.jpg', alt='image')
+                  .portfolio-info
+                    h3 Portfolio Title
+                  // /.portfolio-info
+                // /.portfolio
+              // /.portfolio-bg
+            // /.portfolio-item
+            .portfolio-item.col-xs-12.col-sm-4.col-md-3(data-groups='["all", "identety", "web"]')
+              .portfolio-bg
+                .portfolio
+                  .tt-overlay
+                  .links
+                    a.image-link(href='public/images/works/portfolio-7.jpg')
+                      i.fa.fa-search-plus
+                    a(href='#')
+                      i.fa.fa-link
+                  // /.links
+                  img(src='public/images/works/portfolio-7.jpg', alt='image')
+                  .portfolio-info
+                    h3 Portfolio Title
+                  // /.portfolio-info
+                // /.portfolio
+              // /.portfolio-bg
+            // /.portfolio-item
+            .portfolio-item.col-xs-12.col-sm-4.col-md-3(data-groups='["all", "design"]')
+              .portfolio-bg
+                .portfolio
+                  .tt-overlay
+                  .links
+                    a.image-link(href='public/images/works/portfolio-8.jpg')
+                      i.fa.fa-search-plus
+                    a(href='#')
+                      i.fa.fa-link
+                  // /.links
+                  img(src='public/images/works/portfolio-8.jpg', alt='image')
+                  .portfolio-info
+                    h3 Portfolio Title
+                  // /.portfolio-info
+                // /.portfolio
+              // /.portfolio-bg
+            // /.portfolio-item
+          // /#grid
+        // /.row
+      // /.container
+    // End Works Section
+    // Facts Section
+    section#facts.facts-section.text-center(data-stellar-vertical-offset='50', data-stellar-background-ratio='0.2')
+      .tt-overlay-bg
+        .container
+          .row
+            .col-md-12
+              .count-wrap
+                .col-sm-3.col-xs-6
+                  i.fa.fa-flask
+                  h3.timer 7
+                  p Years of Experience
+                .col-sm-3.col-xs-6
+                  i.fa.fa-thumbs-up
+                  h3.timer 651
+                  p Projects Done
+                .col-sm-3.col-xs-6
+                  i.fa.fa-users
+                  h3.timer 251
+                  p Happy Clients
+                .col-sm-3.col-xs-6
+                  i.fa.fa-trophy
+                  h3.timer 5
+                  p Awards Won
+              // /count-wrap
+            // /.col-md-12
+          // /.row
+        // /.container
+    // End Facts Section
+    // Blog Section
+    section#blog.latest-blog-section.section-padding
+      .container
+        h2.section-title.wow.fadeInUp Latest Post
+        .row
+          .col-sm-4
+            article.blog-post-wrapper
+              .figure
+                .post-thumbnail
+                  a(href='#')
+                    img.img-responsive(src='public/images/blog/01.jpg', alt='')
+                i.fa.fa-file-photo-o
+              // /.figure
+              header.entry-header
+                .post-meta
+                  span.the-category
+                    a(href='#') Print Design,
+                    a(href='#') Photoshop
+                h2.entry-title
+                  a(href='blog-single.html', rel='') Common fonts used for newspaper template design
+                hr
+                .entry-meta
+                  ul.list-inline
+                    li
+                      span.the-author
+                        a(href='#') Admin
+                    li
+                      span.the-time
+                        a(href='#') 06 Jan 2015
+                    li
+                      span.the-share
+                        a(href='#', title='share') 30
+                    li
+                      span.the-comments
+                        a(href='#', title='') 05
+                // .entry-meta
+              // .entry-header
+          // /.col-sm-4
+          .col-sm-4
+            article.blog-post-wrapper
+              .figure
+                .post-thumbnail
+                  a(href='#')
+                    img.img-responsive(src='public/images/blog/02.jpg', alt='')
+                i.fa.fa-file-video-o
+              // /.figure
+              header.entry-header
+                .post-meta
+                  span.the-category
+                    a(href='#') Print Design,
+                    a(href='#') Photoshop
+                h2.entry-title
+                  a(href='blog-single.html', rel='') What is the style of font called that is typically
+                hr
+                .entry-meta
+                  ul.list-inline
+                    li
+                      span.the-author
+                        a(href='#') Admin
+                    li
+                      span.the-time
+                        a(href='#') 06 Jan 2015
+                    li
+                      span.the-share
+                        a(href='#', title='share') 30
+                    li
+                      span.the-comments
+                        a(href='#', title='') 05
+                // .entry-meta
+              // .entry-header
+          // /.col-sm-4
+          .col-sm-4
+            article.blog-post-wrapper
+              .figure
+                .post-thumbnail
+                  a(href='#')
+                    img.img-responsive(src='public/images/blog/03.jpg', alt='')
+                i.fa.fa-quote-left
+              // /.figure
+              header.entry-header
+                .post-meta
+                  span.the-category
+                    a(href='#') Print Design,
+                    a(href='#') Photoshop
+                h2.entry-title
+                  a(href='blog-single.html', rel='') How to create a print ready brochure using photoshop
+                hr
+                .entry-meta
+                  ul.list-inline
+                    li
+                      span.the-author
+                        a(href='#') Admin
+                    li
+                      span.the-time
+                        a(href='#') 06 Jan 2015
+                    li
+                      span.the-share
+                        a(href='#', title='share') 30
+                    li
+                      span.the-comments
+                        a(href='#', title='') 05
+                // .entry-meta
+              // .entry-header
+          // /.col-md-4
+        // /.row
+        .blog-more.text-center
+          a.btn.btn-primary(href='#') View More
+      // /.container
+    // End Blog Section
+    // Hire Section
+    section.hire-section.text-center(data-stellar-vertical-offset='50', data-stellar-background-ratio='0.2')
+      .hire-section-bg
+        .container
+          .row
+            .col-md-12
+              h2 I'm available for freelance projects and more
+              a.btn.btn-default(href='#contact') Hire Me
+            // /.col-md-12
+          // /.row
+        // /.container
+      // /.hire-section-bg
+    // End Hire Section
+    // Contact Section
+    section#contact.contact-section.section-padding
+      .container
+        h2.section-title.wow.fadeInUp Get in touch
+        .row
+          .col-md-6
+            .contact-form
+              strong Send me a message
+              form(name='contact-form', method='post', action='/email')
+                input(type='hidden', name='_csrf', required='', value=csrf)
+                .form-group
+                  label(for='InputName1') Name
+                  input#InputName1.form-control(type='text', name='name', required='')
+                .form-group
+                  label(for='InputEmail1') Email
+                  input#InputEmail1.form-control(type='email', name='email', required='')
+                .form-group
+                  label(for='InputSubject') Subject
+                  input#InputSubject.form-control(type='text', name='subject')
+                .form-group
+                  label(for='InputTextarea') Message
+                  textarea#InputTextarea.form-control(name='message', rows='5', required='')
+                button.btn.btn-primary(type='submit', name='submit') Send Message
+          // /.col-md-6
+          .col-md-6
+            .row.center-xs
+              .col-sm-6
+                i.fa.fa-map-marker
+                address
+                  strong Location
+                  |                   Near National Taiwan University
+                  br
+                  |                   Taipei, TW
+                  br
+              .col-sm-6
+                i.fa.fa-mobile
+                .contact-number
+                  strong Phone Number
+                  |                   (886) 0975 878441
+                  br
+                  |                   (001) 347 6878841
+            .row
+              .col-sm-12
+                .location-map
+                  iframe(width="450" height="345" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDLNZvOMOpoSHBthHfnHeXk4b5IEqW-vOs&q='National Taiwan University'&zoom=12")         // /
+            .row
+      // /.container
+    // End Contact Section
+    // Footer Section
+    footer.footer-wrapper
+      .container
+        .row
+          .col-md-12
+            .copyright.text-center
+              p © Ayo Amadi 2018. All rights reserved.
+    // End Footer Section
+    // Scroll-up
+    .scroll-up
+      a(href='#home')
+        i.fa.fa-angle-up
+    // Javascript files
+    script(src='public/js/jquery.js')
+    script(src='public/bootstrap/js/bootstrap.min.js')
+    script(src='public/js/jquery.stellar.min.js')
+    script(src='public/js/jquery.sticky.js')
+    script(src='public/js/smoothscroll.js')
+    script(src='public/js/wow.min.js')
+    script(src='public/js/jquery.countTo.js')
+    script(src='public/js/jquery.inview.min.js')
+    script(src='public/js/jquery.easypiechart.js')
+    script(src='public/js/jquery.shuffle.min.js')
+    script(src='public/js/jquery.magnific-popup.min.js')
+    script(src='http://a.vimeocdn.com/js/froogaloop2.min.js')
+    script(src='public/js/jquery.fitvids.js')
+    script(src='https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false')
+    script(src='public/js/scripts.js')
