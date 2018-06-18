@@ -19,7 +19,6 @@ lib-cov
 coverage
 
 # blocking images
-/public/images
 /static/uploads
 
 # json keyword files
