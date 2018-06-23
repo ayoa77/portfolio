@@ -240,6 +240,12 @@ hr {
     padding: 0;
 }
 
+.portfolio img{
+    object-fit: cover;
+    height: 165px;
+    width: 220.5px;
+}
+
 /* LIST STYLE
 -------------------------------------------------- */
 ul, ol {
@@ -270,7 +276,9 @@ ul.list-check li::before {
 .section-padding {
 	padding: 120px 0 100px;
 }
-
+.about-section.section-padding {
+    padding: 120px 0 0;
+}
 
 /* SECTION TITLE
 ----------------------------------------------------- */

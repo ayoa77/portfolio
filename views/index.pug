@@ -93,8 +93,8 @@ html(lang='en')
                 a(href='#skills') Skills
               li
                 a(href='#works') Works
-              li
-                a(href='#blog') Blog
+              //- li
+              //-   a(href='#blog') Blog
               li
                 a(href='#contact') Contact
         // .container
@@ -112,9 +112,9 @@ html(lang='en')
                 li
                   strong Name:
                   |  Ayo Amadi || 馬艾哲
-                li
-                  strong Date of birth:
-                  |  09 Sep 1989
+                //- li
+                //-   strong Date of birth:
+                //-   |  09 Sep 1989
                 //- li
                 //-   strong Address:
                 //-   |  239/2 Awesome Street, USA
@@ -141,15 +141,16 @@ html(lang='en')
                 li Backend Engineering
                 li Database Design
                 li API Development
-                li Branding Design
-                li Digital Painting
-                li Video Editing
+                li Custom CMS
+                li Frontend Dev
+                li Learner
             //- .my-signature
             //-   img(src='public/images/sign.png', alt='')
             .download-button
               a.btn.btn-info.btn-lg(href='#contact')
                 i.fa.fa-paper-plane
                 | Send me a message
+                //-need to set up uploads and download for my cv here...make public available :)
               a.btn.btn-primary.btn-lg(href='#')
                 i.fa.fa-download
                 | Download my CV
@@ -191,65 +192,10 @@ html(lang='en')
         .row
           .col-md-12
             .resume-title
-              h3 Education
-            .resume
-              ul.timeline
-                li
-                  .posted-date
-                    span.month 2017
-                  // /posted-date
-                  .timeline-panel.wow.fadeInUp
-                    .timeline-content
-                      .timeline-heading
-                        h3 Web Development Certificate
-                        span Next Academy Web Development Bootcamp, Kuala Lumpur, Malaysia
-                      // /timeline-heading
-                      .timeline-body
-                        p
-                          | After a few years of writing a little bit of HTML and CSS while dabbling in Ruby, I was finally able to fully realize my inclination to becoming a web developer.
-                      // /timeline-body
-                    // /timeline-content
-                  // /timeline-panel
-                li.timeline-inverted
-                  .posted-date
-                    span.month 2014
-                  // /posted-date
-                  .timeline-panel.wow.fadeInUp
-                    .timeline-content
-                      .timeline-heading
-                        h3 TESOL Certificate
-                        span Language Corps, Ho Chi Minh City, Vietnam
-                      // /timeline-heading
-                      .timeline-body
-                        p
-                          | In addition to web development, I am a foodie and I love travelling. So, when I saw my total debt after completing university, I decided teaching English in Vietnam will be a good way to explore these interests further.
-                      // /timeline-body
-                    // /timeline-content
-                  // /timeline-panel
-                li
-                  .posted-date
-                    span.month 2013
-                  // /posted-date
-                  .timeline-panel.wow.fadeInUp
-                    .timeline-content
-                      .timeline-heading
-                        h3 Bachelor's Degree 
-                        span BA in French, Minor in Business, University of Kansas, Kansas, USA
-                      // /timeline-heading
-                      .timeline-body
-                        p
-                          | I worked part-time jobs to help fund my education and and finish my studies in language. Toward the end of my studies, I took a Web Development Course and my intial interest in this field began.
-                      // /timeline-body
-                    // /timeline-content
-                  // /timeline-panel
-        // /row
-        .row
-          .col-md-12
-            .resume-title
               h3 Experience
             .resume
               ul.timeline
-                li.timeline-inverted
+                li
                   .posted-date
                     span.month June 2017 - Present
                   // /posted-date
@@ -265,7 +211,7 @@ html(lang='en')
                       // /timeline-body
                     // /timeline-content
                   // /timeline-panel
-                li
+                li.timeline-inverted
                   .posted-date
                     span.month September 2015 - December 2016
                   // /posted-date
@@ -281,8 +227,7 @@ html(lang='en')
                       // /timeline-body
                     // /timeline-content
                   // /timeline-panel
-              ul.timeline
-                li.timeline-inverted
+                li
                   .posted-date
                     span.month April 2014 - March 2016
                   // /posted-date
@@ -295,6 +240,60 @@ html(lang='en')
                       .timeline-body
                         p
                           | The largest English Center in Vietnam was one of the funnest work experiences I have ever had.
+                  // /posted-date
+        // /row
+        .row
+          .col-md-12
+            .resume-title
+              h3 Education
+            .resume
+              ul.timeline 
+                li.timeline-inverted
+                  .posted-date
+                    span.month 2017
+                  // /posted-date
+                  .timeline-panel.wow.fadeInUp
+                    .timeline-content
+                      .timeline-heading
+                        h3 Web Development Certificate
+                        span Next Academy Web Development Bootcamp, Kuala Lumpur, Malaysia 
+                      // /timeline-heading
+                      .timeline-body
+                        p
+                          | After a few years of writing a little bit of HTML and CSS while dabbling in Ruby, I was finally able to fully realize my inclination to becoming a web developer.
+                      // /timeline-body
+                    // /timeline-content
+                  // /timeline-panel
+                li
+                  .posted-date
+                    span.month 2014
+                  // /posted-date
+                  .timeline-panel.wow.fadeInUp
+                    .timeline-content
+                      .timeline-heading
+                        h3 TESOL Certificate
+                        span Language Corps, Ho Chi Minh City, Vietnam
+                      // /timeline-heading
+                      .timeline-body
+                        p
+                          | In addition to web development, I am a foodie and I love travelling. So, when I saw my total debt after completing university, I decided teaching English in Vietnam will be a good way to explore these interests further.
+                      // /timeline-body
+                    // /timeline-content
+                  // /timeline-panel
+              ul.timeline
+                li.timeline-inverted
+                  .posted-date
+                    span.month 2013
+                  // /posted-date
+                  .timeline-panel.wow.fadeInUp
+                    .timeline-content
+                      .timeline-heading
+                        h3 Bachelor's Degree 
+                        span BA in French, Minor in Business, University of Kansas, Kansas, USA
+                      // /timeline-heading
+                      .timeline-body
+                        p
+                          | I worked part-time jobs to help fund my education and and finish my studies in language. Toward the end of my studies, I took a Web Development Course and my intial interest in this field began.
                       // /timeline-body
                     // /timeline-content
                   // /timeline-panel        // /row
@@ -361,32 +360,32 @@ html(lang='en')
         .skill-chart.text-center
           h3 More skills
         .row.more-skill.text-center
-          .col-xs-12.col-sm-4.col-md-2
+          .col-xs-6.col-sm-4.col-md-2
             .chart(data-percent='70', data-color='e74c3c')
               span.percent
               .chart-text
                 span 中文
-          .col-xs-12.col-sm-4.col-md-2
-            .chart(data-percent='75', data-color='3498db')
+          .col-xs-6.col-sm-4.col-md-2
+            .chart(data-percent='90', data-color='3498db')
               span.percent
               .chart-text
-                span Creativity
-          .col-xs-12.col-sm-4.col-md-2
-            .chart(data-percent='68', data-color='3498db')
+                span Problem Solving
+          .col-xs-6.col-sm-4.col-md-2
+            .chart(data-percent='70', data-color='3498db')
               span.percent
               .chart-text
                 span Management
-          .col-xs-12.col-sm-4.col-md-2
-            .chart(data-percent='68', data-color='3498db')
+          .col-xs-6.col-sm-4.col-md-2
+            .chart(data-percent='80', data-color='3498db')
               span.percent
               .chart-text
-                span Branding
-          .col-xs-12.col-sm-4.col-md-2
+                span Planning
+          .col-xs-6.col-sm-4.col-md-2
             .chart(data-percent='68', data-color='3498db')
               span.percent
               .chart-text
                 span Marketing
-          .col-xs-12.col-sm-4.col-md-2
+          .col-xs-6.col-sm-4.col-md-2
             .chart(data-percent='99', data-color='3498db')
               span.percent
               .chart-text
@@ -401,118 +400,118 @@ html(lang='en')
           li
             a.active(data-group='all') All
           li
-            a(data-group='design') Ruby
+            a(data-group='ruby') Ruby
           li
-            a(data-group='web') NodeJS
+            a(data-group='nodeJS') NodeJS
           li
-            a(data-group='interface') Full-Stack
+            a(data-group='fullstack') Full-Stack
           li
-            a(data-group='identety') Backend
+            a(data-group='backend') Backend
         .row
           #grid
-            .portfolio-item.col-xs-12.col-sm-4.col-md-3(data-groups='["all", "identety", "interface"]')
+            .portfolio-item.col-xs-12.col-sm-4.col-md-3(data-groups='["all", "backend", "nodeJS"]')
               .portfolio-bg
                 .portfolio
                   .tt-overlay
                   .links
                     a.image-link(href='public/images/works/portfolio-1.jpg')
                       i.fa.fa-search-plus
-                    a(href='#')
+                    a(href='http://dev.petbond.com.tw')
                       i.fa.fa-link
                   // /.links
                   img(src='public/images/works/portfolio-1.jpg', alt='image')
                   .portfolio-info
-                    h3 Portfolio Title
+                    h3 Petbond
                   // /.portfolio-info
                 // /.portfolio
               // /.portfolio-bg
             // /.portfolio-item
-            .portfolio-item.col-xs-12.col-sm-4.col-md-3(data-groups='["all", "identety", "web"]')
+            .portfolio-item.col-xs-12.col-sm-4.col-md-3(data-groups='["all", "fullstack", "nodeJS", "backend"]')
               .portfolio-bg
                 .portfolio
                   .tt-overlay
                   .links
-                    a.image-link(href='public/images/works/portfolio-2.jpg')
+                    a.image-link(href='public/images/works/jarvis.png')
                       i.fa.fa-search-plus
-                    a(href='#')
+                    a(href='http://jarvis.frankish.international/')
                       i.fa.fa-link
                   // /.links
-                  img(src='public/images/works/portfolio-2.jpg', alt='image')
+                  img(src='public/images/works/jarvis.png', alt='image')
                   .portfolio-info
-                    h3 Portfolio Title
+                    h3 Jarvis.Ai
                   // /.portfolio-info
                 // /.portfolio
               // /.portfolio-bg
             // /.portfolio-item
-            .portfolio-item.col-xs-12.col-sm-4.col-md-3(data-groups='["all", "interface"]')
+            .portfolio-item.col-xs-12.col-sm-4.col-md-3(data-groups='["all", "fullstack", "backend", "nodeJS"]')
               .portfolio-bg
                 .portfolio
                   .tt-overlay
                   .links
                     a.image-link(href='public/images/works/portfolio-3.jpg')
                       i.fa.fa-search-plus
-                    a(href='#')
+                    a(href='/flashcards')
                       i.fa.fa-link
                   // /.links
                   img(src='public/images/works/portfolio-3.jpg', alt='image')
                   .portfolio-info
-                    h3 Portfolio Title
+                    h3 中文 flashcards
                   // /.portfolio-info
                 // /.portfolio
               // /.portfolio-bg
             // /.portfolio-item
-            .portfolio-item.col-xs-12.col-sm-4.col-md-3(data-groups='["all", "identety", "design"]')
+            .portfolio-item.col-xs-12.col-sm-4.col-md-3(data-groups='["all", "backend", "ruby", "fullstack"]')
               .portfolio-bg
                 .portfolio
                   .tt-overlay
                   .links
-                    a.image-link(href='public/images/works/portfolio-4.jpg')
+                    a.image-link(href='public/images/works/canopy.png')
                       i.fa.fa-search-plus
-                    a(href='#')
+                    a(href='http://canopy.frankish.international')
                       i.fa.fa-link
                   // /.links
-                  img(src='public/images/works/portfolio-4.jpg', alt='image')
+                  img(src='public/images/works/canopy.png', alt='image')
                   .portfolio-info
-                    h3 Portfolio Title
+                    h3 Canopy
                   // /.portfolio-info
                 // /.portfolio
               // /.portfolio-bg
             // /.portfolio-item
-            .portfolio-item.col-xs-12.col-sm-4.col-md-3(data-groups='["all", "identety", "design"]')
+            .portfolio-item.col-xs-12.col-sm-4.col-md-3(data-groups='["all", "backend","fullstack", "ruby"]')
               .portfolio-bg
                 .portfolio
                   .tt-overlay
                   .links
-                    a.image-link(href='public/images/works/portfolio-5.jpg')
+                    a.image-link(href='public/images/works/mypal.png')
                       i.fa.fa-search-plus
-                    a(href='#')
+                    a(href='http://mypal.frankish.international')
                       i.fa.fa-link
                   // /.links
-                  img(src='public/images/works/portfolio-5.jpg', alt='image')
+                  img(src='public/images/works/mypal.png', alt='image')
                   .portfolio-info
-                    h3 Portfolio Title
+                    h3 MyPal
                   // /.portfolio-info
                 // /.portfolio
               // /.portfolio-bg
             // /.portfolio-item
-            .portfolio-item.col-xs-12.col-sm-4.col-md-3(data-groups='["all", "identety", "design"]')
+            .portfolio-item.col-xs-12.col-sm-4.col-md-3(data-groups='["all", "backend", "fullstack", "ruby"]')
               .portfolio-bg
                 .portfolio
                   .tt-overlay
                   .links
-                    a.image-link(href='public/images/works/portfolio-6.jpg')
+                    a.image-link(href='public/images/works/BoC.png')
                       i.fa.fa-search-plus
-                    a(href='#')
-                      i.fa.fa-link
+                    //- a(href='#')
+                    //-   i.fa.fa-link
                   // /.links
-                  img(src='public/images/works/portfolio-6.jpg', alt='image')
+                  img(src='public/images/works/BoC.png', alt='image')
                   .portfolio-info
-                    h3 Portfolio Title
+                    h3 Box Of Chocolates
                   // /.portfolio-info
                 // /.portfolio
               // /.portfolio-bg
             // /.portfolio-item
-            .portfolio-item.col-xs-12.col-sm-4.col-md-3(data-groups='["all", "identety", "web"]')
+            //- .portfolio-item.col-xs-12.col-sm-4.col-md-3(data-groups='["all", "backend", "fullstack", "ruby"]')
               .portfolio-bg
                 .portfolio
                   .tt-overlay
@@ -529,7 +528,7 @@ html(lang='en')
                 // /.portfolio
               // /.portfolio-bg
             // /.portfolio-item
-            .portfolio-item.col-xs-12.col-sm-4.col-md-3(data-groups='["all", "design"]')
+            //- .portfolio-item.col-xs-12.col-sm-4.col-md-3(data-groups='["all", "ruby"]')
               .portfolio-bg
                 .portfolio
                   .tt-overlay
@@ -551,35 +550,35 @@ html(lang='en')
       // /.container
     // End Works Section
     // Facts Section
-    section#facts.facts-section.text-center(data-stellar-vertical-offset='50', data-stellar-background-ratio='0.2')
-      .tt-overlay-bg
-        .container
-          .row
-            .col-md-12
-              .count-wrap
-                .col-sm-3.col-xs-6
-                  i.fa.fa-flask
-                  h3.timer 7
-                  p Years of Experience
-                .col-sm-3.col-xs-6
-                  i.fa.fa-thumbs-up
-                  h3.timer 651
-                  p Projects Done
-                .col-sm-3.col-xs-6
-                  i.fa.fa-users
-                  h3.timer 251
-                  p Happy Clients
-                .col-sm-3.col-xs-6
-                  i.fa.fa-trophy
-                  h3.timer 5
-                  p Awards Won
+    //- section#facts.facts-section.text-center(data-stellar-vertical-offset='50', data-stellar-background-ratio='0.2')
+    //-   .tt-overlay-bg
+    //-     .container
+    //-       .row
+    //-         .col-md-12
+    //-           .count-wrap
+    //-             .col-sm-3.col-xs-6
+    //-               i.fa.fa-flask
+    //-               h3.timer 7
+    //-               p Years of Experience
+    //-             .col-sm-3.col-xs-6
+    //-               i.fa.fa-thumbs-up
+    //-               h3.timer 651
+    //-               p Projects Done
+    //-             .col-sm-3.col-xs-6
+    //-               i.fa.fa-users
+    //-               h3.timer 251
+    //-               p Happy Clients
+    //-             .col-sm-3.col-xs-6
+    //-               i.fa.fa-trophy
+    //-               h3.timer 5
+    //-               p Awards Won
               // /count-wrap
             // /.col-md-12
           // /.row
         // /.container
     // End Facts Section
     // Blog Section
-    section#blog.latest-blog-section.section-padding
+    //- section#blog.latest-blog-section.section-padding
       .container
         h2.section-title.wow.fadeInUp Latest Post
         .row
@@ -754,18 +753,18 @@ html(lang='en')
         .row
           .col-md-12
             .copyright.text-center
-              p © Ayo Amadi 2018. All rights reserved.
+              p © Ayo Amadi #{moment().year()}. All rights reserved.
     // End Footer Section
     // Scroll-up
     .scroll-up
-      a(href='#home')
+      a(href='#about')
         i.fa.fa-angle-up
     // Javascript files
     script(src='public/js/jquery.js')
     script(src='public/bootstrap/js/bootstrap.min.js')
     script(src='public/js/jquery.stellar.min.js')
     script(src='public/js/jquery.sticky.js')
-    script(src='public/js/smoothscroll.js')
+    //- script(src='public/js/smoothscroll.js')
     script(src='public/js/wow.min.js')
     script(src='public/js/jquery.countTo.js')
     script(src='public/js/jquery.inview.min.js')

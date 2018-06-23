@@ -61,7 +61,7 @@ gulp.task('js-watch', ['scripts'], function (done) {
 
 gulp.task('nodemon', function () {
     nodemon({
-        script: 'app.js',
+        script: 'server.js',
         // ignore: ["" + __dirname + "/public/**/*.*"],
         // ignore: ["" + __dirname + "/static/**/*.*"],
         ext: 'js'

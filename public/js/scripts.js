@@ -90,7 +90,7 @@ jQuery(function ($) {
 
     (function () {
         $(window).scroll(function() {
-            if ($(this).scrollTop() > 100) {
+            if ($(this).scrollTop() > 1250) {
                 $('.scroll-up').fadeIn();
             } else {
                 $('.scroll-up').fadeOut();

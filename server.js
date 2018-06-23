@@ -24,7 +24,7 @@ require('dotenv').config();
 // }));
 
 const pug = require('pug');
-app.engine('pug', require('pug').__express)
+app.set('view engine', 'pug');
 app.set('views', `${__dirname}/views`);
 app.use('/public', express.static(`${__dirname}/public`));
 
@@ -102,8 +102,9 @@ mongoose.Promise = global.Promise;
  * Put some variables for ejs to use
  */
 app.use(function varsForPug(req, res, next) {
-    res.locals.moment = require('moment');
     // String(moment().format('YYYY/MM/DD hh:mm'))
+    res.locals.moment = require('moment');
+    // console.log(res.locals.moment.year())
     // res.locals._flashMessage = req.flash('message');
     // res.locals._flashError = req.flash('error');
     next();
