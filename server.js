@@ -71,7 +71,7 @@ app.use(sessions({
 // app.use(flash());
 // //===============//
 
-
+const presRoutes = require("./routes/presRoutes");
 const indexRoutes = require("./routes/indexRoutes");
 const cmsRoutes = require("./routes/cmsRoutes");
 //fs.readdirSync(__dirname + '/routes').forEach(function (filename) {
@@ -156,6 +156,7 @@ app.get('/robots.txt', (req, res) => {
 // app.use("/cms/", cmsRoutes);
 
 app.use("/", indexRoutes);
+app.use("/pres", presRoutes);
 
 
 

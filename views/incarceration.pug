@@ -1,0 +1,83 @@
+doctype html
+html
+    head
+        title chart created with amCharts | amCharts
+        meta(name="description" content="chart created using amCharts live editor")
+        // amCharts javascript sources
+        script(type="text/javascript" src="https://www.amcharts.com/lib/3/amcharts.js")
+        script(type="text/javascript" src="https://www.amcharts.com/lib/3/serial.js")
+        script(type="text/javascript" src="https://www.amcharts.com/lib/3/themes/dark.js")
+        // amCharts javascript code
+        script(type="text/javascript").
+            AmCharts.makeChart("chartdiv",
+            {
+            "type": "serial",
+            "categoryField": "category",
+            "angle": 30,
+            "depth3D": 30,
+            "startDuration": 1,
+            "theme": "dark",
+            "categoryAxis": {
+            "gridPosition": "start"
+            },
+            "trendLines": [],
+            "graphs": [
+            {
+            "balloonText": "[[title]] of [[category]]:[[value]]",
+            "fillAlphas": 1,
+            "id": "AmGraph-1",
+            "title": "黑人",
+            "type": "column",
+            "valueField": "黑人"
+            },
+            {
+            "balloonText": "[[title]] of [[category]]:[[value]]",
+            "fillAlphas": 1,
+            "id": "AmGraph-2",
+            "title": "其他",
+            "type": "column",
+            "valueField": "其他"
+            }
+            ],
+            "guides": [],
+            "valueAxes": [
+            {
+            "id": "ValueAxis-1",
+            "stackType": "100%",
+            "title": "人口（%）"
+            }
+            ],
+            "allLabels": [],
+            "balloon": {},
+            "legend": {
+            "enabled": true,
+            "useGraphSettings": true
+            },
+            "titles": [
+            {
+            "id": "Title-1",
+            "size": 15,
+            "text": "美國毒品的數字"
+            }
+            ],
+            "dataProvider": [
+            {
+            "category": "美國人口",
+            "黑人": "44000000",
+            "其他": "281000000"
+            },
+            {
+            "category": "犯人",
+            "黑人": "880000",
+            "其他": "1320000"
+            },
+            {
+            "category": "犯毒品的法",
+            "黑人": "37000",
+            "其他": "58000"
+            }
+            ]
+            }
+            );
+    body
+        #chartdiv(style="width: 100%; height: 400px; background-color: #282828;")
