@@ -34,8 +34,8 @@ body{
     line-height: 28px;
     font-weight: 300;
     font-size: 14px;
-    color:#282828;
-    background-color: #fff;
+    color:#1D2015;
+    background-color: #FFFAF6;
     -webkit-text-size-adjust: 100%;
     -webkit-overflow-scrolling: touch;
     -webkit-font-smoothing: antialiased !important;
@@ -48,7 +48,7 @@ body, html{
 /* Link style
 ---------------------------------------------------------*/
 a {
-    color: #68c3a3;
+    color: #8C5F66;
 }
 a,
 a > * {
@@ -59,7 +59,7 @@ a > * {
 a:focus,
 a:hover {
     outline: none;
-    color: #333333;
+    color: #1D201F;
     text-decoration: none;
 }
 
@@ -139,14 +139,14 @@ h6 {
 /* === FORM STYLE === */
 .form-control {
     height: 45px;
-    background-color: #f7f7f7;
+    background-color: #FFFAF6;
     border: 1px solid #e8e8e8;
     border-radius: 0;
     box-shadow: none;
 }
 
 .form-control:focus {
-    border-color: #68c3a3;
+    border-color: #8C5F66;
     box-shadow: none;
 }
 
@@ -172,7 +172,7 @@ h6 {
 
 /*btn-primary*/
 .btn-primary{
-    background-color:#68c3a3;
+    background-color:#8C5F66;
     border-color: rgba(51, 51, 51, 0.15);
 }
 
@@ -182,14 +182,14 @@ h6 {
 .btn-primary:active, 
 .btn-primary.active, 
 .open>.dropdown-toggle.btn-primary {
-    color: #fff;
-    background-color: #4eb28f;
-    border-color: #4eb28f;
+    color: #FFFAF6;
+    background-color: #C58882;
+    border-color: #C58882;
 }
 
 /*btn-info*/
 .btn-info{
-    background-color:#52b3d9;
+    background-color:#ADBCA5;
     border-color: rgba(51, 51, 51, 0.15);
 }
 
@@ -199,25 +199,25 @@ h6 {
 .btn-info:active, 
 .btn-info.active, 
 .open>.dropdown-toggle.btn-info {
-    color: #fff;
-    background-color: #4aa0c2;
-    border-color: #4aa0c2;
+    color: #FFFAF6;
+    background-color: #C58882;
+    border-color: #C58882;
 }
 
 /*btn-default*/
 .btn-default {
     background: transparent;
-    border: 1px solid #fff;
-    color: #fff;
+    border: 1px solid #FFFAF6;
+    color: #FFFAF6;
 }
 .btn-default:hover, 
 .btn-default:focus, 
 .btn-default.focus, 
 .btn-default:active, 
 .btn-default.active{
-    color: #68c3a3;
-    background-color: #fff;
-    border-color: #fff;
+    color: #8C5F66;
+    background-color: #FFFAF6;
+    border-color: #FFFAF6;
 }
 
 
@@ -243,7 +243,6 @@ hr {
 .portfolio img{
     object-fit: cover;
     height: 165px;
-    width: 220.5px;
 }
 
 /* LIST STYLE
@@ -267,7 +266,7 @@ ul.list-check li{
 ul.list-check li::before {
     content: "\f00c";
     font-family: fontawesome;
-    color: #68c3a3;
+    color: #8C5F66;
     margin-right: 10px;
 }
 
@@ -287,7 +286,7 @@ ul.list-check li::before {
     text-align: center;
     font-size: 50px;
     line-height: 50px;
-    color: #2c3e50;
+    color: #1D2015;
     position: relative;
 }
 
@@ -317,14 +316,14 @@ ul.list-check li::before {
 	background: url(../images/home2.jpg) no-repeat center center;
 	-webkit-background-attachment: fixed;
     background-attachment: fixed;
-	background-color: #222;
+	background-color: #1D201F;
 	background-size: cover;
 	padding: 0;
 	position: relative;
 }
 #home:before {
 	content: "";
-	background-color: rgba(26, 30, 35, 0.85);
+	background-color: rgba(29, 32, 31, 0.85);
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -350,18 +349,18 @@ ul.list-check li::before {
 	font-size: 60px;
 	line-height: 80px;
 	margin-bottom: 16px;
-	color: #52b3d9;
+	color: #ADBCA5;
 }
 .intro h1 span{
-	color: #68c3a3;
+	color: #8C5F66;
 }
 .intro p{
-	color: #f7f7f7;
+	color: #FFFAF6;
 	margin-bottom: 40px;
 }
 
 .intro-sub {
-	color: #fff;
+	color: #FFFAF6;
 	font-size: 24px;
 	line-height: 32px;
 	font-weight: 700;
@@ -378,7 +377,7 @@ SOCIAL ICON
 }
 .social-icons a i{
     position: relative;
-    color: #fff;
+    color: #FFFAF6;
     font-size: 18px;
     margin: 0 7px;
     line-height: 40px;
@@ -399,7 +398,7 @@ SOCIAL ICON
     top: 0;
     width: 40px;
     height: 40px;
-    border: 1px solid #fff;
+    border: 1px solid #FFFAF6;
     border-radius: 3px;
     -webkit-transform: rotate(45deg);
        -moz-transform: rotate(45deg);
@@ -413,7 +412,7 @@ SOCIAL ICON
 }
 
 .social-icons a i:hover::after{
-    background: #68c3a3;
+    background: #8C5F66;
     border: 1px solid transparent;
     z-index: 0;
 }
@@ -426,7 +425,7 @@ SOCIAL ICON
     width: 100%;
     z-index: 998;
     padding-bottom: 1px;
-    background: #fff;
+    background: #FFFAF6;
 }
 
 .header::after {
@@ -450,7 +449,7 @@ SOCIAL ICON
 
 .navbar-custom,
 .navbar-custom .dropdown-menu {
-    background: #fff;
+    background: #FFFAF6;
     padding: 0;
 }
 
@@ -464,10 +463,10 @@ SOCIAL ICON
     visibility: hidden;
     opacity:0;
     border: 1px solid #ddd;
-    border-top: 2px solid #68c3a3;
+    border-top: 2px solid #8C5F66;
     border-radius: 0;
     border-bottom: 3px double #ddd;
-    background-color: #FFFFFF;
+    background-color: #FFFAF6;
     -webkit-transition:all 400ms;
     -moz-transition:all 400ms;
     -o-transition:all 400ms;
@@ -486,7 +485,7 @@ SOCIAL ICON
 }
 
 .navbar-custom .navbar-nav > li > a{
-    color: #282828;
+    color: #1D2015;
     font-size: 14px;
     font-weight: 700;
     padding-top: 20px;
@@ -504,7 +503,7 @@ SOCIAL ICON
 
 .navbar-custom .dropdown-menu > li > a {
     padding: 10px 20px;
-    color: #282828;
+    color: #1D2015;
     font-size: 14px;
     font-weight: 700;
 }
@@ -515,12 +514,16 @@ SOCIAL ICON
 .navbar-custom .navbar-nav > li.active > a {
     background: none;
     outline: 0;
-    color: #68c3a3;
+    color: #8C5F66;
 }
 
 .navbar-custom .navbar-brand {
     font-weight: 700;
     font-size: 18px;
+}
+
+.navbar-brand{
+    width: 150px;
 }
 
 .navbar-custom .nav .open > a,
@@ -530,7 +533,7 @@ SOCIAL ICON
 }
 
 .navbar-custom .navbar-toggle .icon-bar {
-    background: #222;
+    background: #1D201F;
 }
 
 
@@ -564,7 +567,7 @@ SOCIAL ICON
 /*download-button*/
 .download-button a {
     margin-right: 20px;
-    color: #fff;
+    color: #FFFAF6;
 }
 .download-button a i {
     margin-right: 10px;
@@ -632,12 +635,12 @@ SOCIAL ICON
     margin-top: -50px;
     left: 0;
     right:0;
-    color: #fff;
+    color: #FFFAF6;
     background: none;
 }
 
 .video-intro i{
-    border: 1px solid #fff;
+    border: 1px solid #FFFAF6;
     width: 80px;
     height: 60px;
     line-height: 60px;
@@ -688,7 +691,7 @@ Resume Timeline
     top: -8px;
     width: 10px;
     height: 10px;
-    background-color: #e1e1e1;
+    background-color: #FFFAF6;
     left: 50%;
     margin-left: -6px;
     -webkit-transform: rotate(45deg);
@@ -704,7 +707,7 @@ Resume Timeline
     bottom: -8px;
     width: 10px;
     height: 10px;
-    background-color: #e1e1e1;
+    background-color: #FFFAF6;
     left: 50%;
     margin-left: -6px;
     -webkit-transform: rotate(45deg);
@@ -721,7 +724,7 @@ Resume Timeline
     bottom: 0;
     width: 2px;
     margin-left: -1.5px;
-    background-color: #e1e1e1;
+    background-color: #FFFAF6;
 }
 
 .timeline>li {
@@ -767,7 +770,7 @@ Resume Timeline
 .timeline>li .posted-date {
     position: relative;
     text-align: center;
-    background-color: #fff;
+    background-color: #FFFAF6;
     left: 20px;
 }
 
@@ -777,7 +780,7 @@ Resume Timeline
     line-height: 20px;
     font-weight: 700;
     display: block;
-    color: #2c3e50;
+    color: #1D2015;
     top: 0;
     float: left;
 }
@@ -832,7 +835,7 @@ Resume Timeline
 .timeline>li .posted-date {
     position: absolute;
     text-align: center;
-    background-color: #fff;
+    background-color: #FFFAF6;
 }
 
 .timeline>li .timeline-panel {
@@ -846,7 +849,7 @@ Resume Timeline
 .timeline-content{
     position: relative;
     padding: 24px;
-    background-color: #fff;
+    background-color: #FFFAF6;
     -webkit-transition:all 400ms;
     -moz-transition:all 400ms;
     -o-transition:all 400ms;
@@ -865,8 +868,8 @@ Resume Timeline
 }
 
 .timeline>li .timeline-content:hover {
-    background: #68c3a3;
-    color: #fff;
+    background: #8C5F66;
+    color: #FFFAF6;
 }
 
 .timeline>li .timeline-panel::before,
@@ -886,7 +889,7 @@ Resume Timeline
     transition: all 400ms;
 }
 .timeline>li .timeline-panel:hover::before {
-    border-left: 12px solid #68c3a3;
+    border-left: 12px solid #8C5F66;
 }
 
 .timeline>li.timeline-inverted .timeline-panel::before {
@@ -898,7 +901,7 @@ Resume Timeline
     transition: all 400ms;
 }
 .timeline>li.timeline-inverted .timeline-panel:hover::before {
-    border-right: 12px solid #68c3a3;
+    border-right: 12px solid #8C5F66;
     border-left: 0;
 }
 
@@ -913,27 +916,27 @@ Resume Timeline
 .timeline>li .timeline-panel::after {
     left: 100%;
     margin-left: -2px;
-    border-left: 12px solid #FFFFFF;
+    border-left: 12px solid #FFFAF6;
     -webkit-transition:all 400ms;
     -moz-transition:all 400ms;
     -o-transition:all 400ms;
     transition: all 400ms;
 }
 .timeline>li .timeline-panel:hover::after {
-    border-left: 12px solid #68c3a3;
+    border-left: 12px solid #8C5F66;
 }
 
 .timeline>li.timeline-inverted .timeline-panel::after {
     right: 100%;
     margin-right:-2px;
-    border-right: 12px solid #FFFFFF;
+    border-right: 12px solid #FFFAF6;
     -webkit-transition:all 400ms;
     -moz-transition:all 400ms;
     -o-transition:all 400ms;
     transition: all 400ms;
 }
 .timeline>li.timeline-inverted .timeline-panel:hover::after {
-    border-right: 12px solid #68c3a3;
+    border-right: 12px solid #8C5F66;
     border-left: 0;
 }
 
@@ -954,15 +957,15 @@ Resume Timeline
 
 /* === Skill Section === */
 .skills-section {
-    background-color: #1a1e23;
-    color: #fff;   
+    background-color: #1D201F;
+    color: #FFFAF6;   
 }
 .skills-section .section-title{
-    color: #fff;
+    color: #FFFAF6;
     margin-bottom: 110px;  
 }
 .skills-section .section-title h2{
-    color: #fff;
+    color: #FFFAF6;
 }
 .skill-title {
     width: 25%;
@@ -985,14 +988,14 @@ Resume Timeline
 .progress {
     height: 10px;
     margin-bottom: 40px;
-    background-color: #3a4149;
+    background-color: #ADBCA5;
     border-radius: 3px;
     box-shadow: none;
     width: 75%;
 }
 
 .progress-bar {
-    background-color: #68c3a3;
+    background-color: #8C5F66;
 }
 .progress-bar span{
     position: absolute;
@@ -1073,7 +1076,7 @@ Resume Timeline
 
 /* === Work Section === */
 .works-section {
-    background-color: #f7f7f7;
+    background-color: #FFFAF6;
 }
 .portfolio-item {
     padding-right: 5px;
@@ -1081,7 +1084,7 @@ Resume Timeline
     min-height: 235px;
 }
 .portfolio-bg{
-   background: #fff;
+   background: #FFFAF6;
    padding: 5px;
    margin-bottom: 20px;
    border: 1px solid #eee;
@@ -1103,7 +1106,7 @@ Resume Timeline
 
 
 #filter li a {
-    color: #68c3a3;
+    color: #8C5F66;
     display: block;
     text-transform: uppercase;
     padding: 0 15px;
@@ -1113,8 +1116,8 @@ Resume Timeline
 #filter li a.active,
 #filter li a:hover {
     position: relative;
-    background: #68c3a3;
-    color: #fff;
+    background: #8C5F66;
+    color: #FFFAF6;
     border-bottom: 3px solid rgba(0, 0, 0, 0.15);
 }
 
@@ -1126,7 +1129,7 @@ Resume Timeline
     height: 0;
     border-left: 8px solid transparent;
     border-right: 8px solid transparent;
-    border-top: 10px solid rgba(104, 195, 163, 1);
+    border-top: 10px solid #8C5F66;
     bottom: -9px;
     left: 50%;
     margin-left: -8px;
@@ -1170,13 +1173,13 @@ Resume Timeline
 
 .links a i{
     position: relative;
-    color: #68c3a3;
+    color: #8C5F66;
     font-size: 16px;
     margin: 0 13px;
     z-index: 100;
 }
 .links a:hover i {
-   color:  #fff;
+   color:  #FFFAF6;
 }
 .links a i::after{
     position: absolute;
@@ -1185,7 +1188,7 @@ Resume Timeline
     top: -7px;
     width: 30px;
     height: 30px;
-    border: 1px solid #68c3a3;
+    border: 1px solid #8C5F66;
     z-index: -1;
     border-radius: 3px;
     -webkit-transform: rotate(45deg);
@@ -1195,15 +1198,15 @@ Resume Timeline
             transform: rotate(45deg);
 }
 .links a:hover i::after {
-    background-color: #68c3a3;
+    background-color: #8C5F66;
 }
 
 .portfolio-info {
     position: absolute;
     bottom: -100%;
     left: 0;
-    background-color: #68c3a3;
-    color: #fff;
+    background-color: #8C5F66;
+    color: #FFFAF6;
     height: 45px;
     width: 100%;
     text-align: center;
@@ -1261,11 +1264,11 @@ Resume Timeline
     background: url(../../public/images/counter-bg.jpg) no-repeat center center;
     background-attachment: fixed;
     background-size: cover;
-    color: #fff;  
+    color: #FFFAF6;  
 }
 
 .tt-overlay-bg {
-    background: rgba(26, 30, 35, 0.85);
+    background: rgba(29, 32, 31, 0.85);
     padding: 110px 0;
 }
 
@@ -1301,7 +1304,7 @@ Resume Timeline
     position: absolute;
     bottom: -8px;
     right: 30px;
-    color: #fff;
+    color: #FFFAF6;
     font-size: 18px;
     z-index: 100;
 }
@@ -1312,7 +1315,7 @@ Resume Timeline
     top: -10px;
     width: 40px;
     height: 40px;
-    background-color: #68c3a3;
+    background-color: #8C5F66;
     z-index: -1;
     border-radius: 3px;
     -webkit-transform: rotate(45deg);
@@ -1361,13 +1364,13 @@ Resume Timeline
     font-weight: 700;
 }
 .entry-title a{
-    color: #282828;
+    color: #1D2015;
 }
 .entry-title a:hover{
-    color: #68c3a3;
+    color: #8C5F66;
 }
 .entry-meta {
-    color: #afafaf;
+    color: #ADBCA5;
 }
 .entry-meta ul {
     margin-bottom: 10px;
@@ -1377,11 +1380,11 @@ Resume Timeline
 }
 .entry-meta ul li a{
     display: inline-block;
-    color: #BBBBBB;
+    color: #ADBCA5;
     font-weight: 400;
 }
 .entry-meta ul li a:hover{
-    color: #68c3a3;
+    color: #8C5F66;
 }
 
 .blog-more {
@@ -1423,17 +1426,17 @@ Icon for all respective meta
 
 /* === Hire Section === */
 .hire-section {
-    background: url(../../public/images/hire-bg.jpg) no-repeat top center #68C3A3;
+    background: url(../../public/images/hire-bg.jpg) no-repeat top center #8C5F66;
     background-attachment: fixed;
     background-size: cover;
-    color: #fff;  
+    color: #FFFAF6;  
 }
 .hire-section-bg {
     padding: 110px 0;
-    background: -webkit-linear-gradient(bottom, #68C3A3, rgba(104, 195, 163, 0.7)); /*Safari 5.1-6*/
-    background: -o-linear-gradient(top, #68C3A3, rgba(104, 195, 163, 0.7)); /*Opera 11.1-12*/
-    background: -moz-linear-gradient(top, #68C3A3, rgba(104, 195, 163, 0.7)); /*Fx 3.6-15*/
-    background: linear-gradient(to top, #68C3A3, rgba(104, 195, 163, 0.7)); /*Standard*/
+    background: -webkit-linear-gradient(bottom, #8C5F66, rgba(197, 136, 130, 0.7)); /*Safari 5.1-6*/
+    background: -o-linear-gradient(top, #8C5F66, rgba(197, 136, 130, 0.7)); /*Opera 11.1-12*/
+    background: -moz-linear-gradient(top, #8C5F66, rgba(197, 136, 130, 0.7)); /*Fx 3.6-15*/
+    background: linear-gradient(to top, #8C5F66, rgba(197, 136, 130, 0.7)); /*Standard*/
 }
 
 .hire-section h2 {
@@ -1488,7 +1491,7 @@ Icon for all respective meta
     border-bottom: 3px double #eee;
 }
 .map-canvas {
-    height: 350px;
+    height: 333px;
 }
 
 
@@ -1498,7 +1501,7 @@ Icon for all respective meta
 .footer-wrapper {
     background: #1a1e23;
     padding: 36px 0;
-    color: #fff;
+    color: #FFFAF6;
   
 }
 .copyright p {
@@ -1523,20 +1526,20 @@ Icon for all respective meta
 }
 
 .scroll-up a {
-	background-color: #68c3a3;
+	background-color: #8C5F66;
 	display: block;
 	width: 28px;
 	height: 28px;
 	text-align: center;
-	color: #fff;
+	color: #FFFAF6;
 	font-size: 14px;
 	line-height: 28px;
 }
 
 .scroll-up a:hover,
 .scroll-up a:active {
-	background-color: rgba(235, 235, 235, .8);
-	color: #222;
+	background-color: rgba(255, 250, 246, .8);
+	color: #1D201F;
 }
 
 /* ---------------------------------------------- /*
@@ -1547,7 +1550,7 @@ Icon for all respective meta
 	position: absolute;
 	left: 50%;
 	bottom: 40px;
-	border: 2px solid #fff;
+	border: 2px solid #FFFAF6;
 	border-radius: 16px;
 	height: 50px;
 	width: 30px;
@@ -1574,7 +1577,7 @@ Icon for all respective meta
 .mouse-icon .wheel {
 	position: relative;
 	border-radius: 10px;
-	background: #fff;
+	background: #FFFAF6;
 	width: 4px;
 	height: 10px;
 	top: 4px;
@@ -1600,7 +1603,7 @@ Icon for all respective meta
 /* ---------------------------------------------- */
 
 #tt-preloader {
-	background: #FFF;
+	background: #FFFAF6;
 	bottom: 0;
 	left: 0;
 	position: fixed;
@@ -1638,7 +1641,7 @@ Icon for all respective meta
 
 #homeTwo {
     background: url(../images/home-2.jpg) no-repeat center center;
-    background-color: #222;
+    background-color: #1D201F;
     background-size: cover;
     padding: 0;
     position: relative;
@@ -1682,7 +1685,7 @@ Icon for all respective meta
     padding:120px 0;
 }
 .service-section h2 {
-    color: #fff;
+    color: #FFFAF6;
 }
 .service-wrap{
     padding: 40px 0
@@ -1700,7 +1703,7 @@ Icon for all respective meta
     top: 0;
     left: 0;
     text-align: center;
-    border: 1px solid #fff;
+    border: 1px solid #FFFAF6;
     width: 180px;
     height: 180px;
     -webkit-transform: rotate(45deg);
@@ -1712,7 +1715,7 @@ Icon for all respective meta
 }
 .service-box i {
     font-size: 40px;
-    color: #fff;
+    color: #FFFAF6;
     line-height: 100px;
     z-index: 100;
     position: relative;
@@ -1720,17 +1723,17 @@ Icon for all respective meta
 .service-box h3 {
     font-size: 18px;
     line-height: 18px;
-    color: #fff;
+    color: #FFFAF6;
     z-index: 100;
     position: relative;
 }
 .service-box:hover.service-box::after{
-    background: #fff;
+    background: #FFFAF6;
     border: 1px solid transparent;
 }
 .service-box:hover i,
 .service-box:hover h3{
-    color: #2c3e50;
+    color: #1D2015;
 }
 .service-box i,
 .service-box h3,
@@ -1748,7 +1751,7 @@ Icon for all respective meta
 
 #homeTwo:before {
     content: "";
-    background-color: rgba(26, 30, 35, 0.90);
+    background-color: rgba(29, 32, 31, 0.90);
     position: absolute;
     top: 0;
     left: 0;
@@ -1765,7 +1768,7 @@ Icon for all respective meta
 }
 
 .personal-info {
-    color: #fff;
+    color: #FFFAF6;
     padding:0 0 0 15px;
     position: absolute;
     top: 50%;
@@ -1783,7 +1786,7 @@ Icon for all respective meta
 }
 
 .personal-info h1 span{
-    color:#68c3a3;
+    color:#8C5F66;
 }
 .personal-info p {
     margin-bottom: 40px;
@@ -1794,7 +1797,7 @@ Icon for all respective meta
     -webkit-background-size: cover;
     background-size: cover;
     min-height: 390px;
-    border: 5px solid #FFF;
+    border: 5px solid #FFFAF6;
     padding: 5px;
     box-shadow: 0 0px 0px 1px #eee;
 }
