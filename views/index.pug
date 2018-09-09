@@ -709,20 +709,20 @@ html(lang='en')
           .col-md-6
             .contact-form
               strong Send me a message
-              form(name='contact-form', method='post', action='/email')
-                input(type='hidden', name='_csrf', required='', value=csrf)
+              form(id='contactForm', name='contact-form',onsubmit='formSubmit(event)', method='post', action='/email')
+                input(type="hidden", name="_csrf", value=csrfToken)
                 .form-group
                   label(for='InputName1') Name
-                  input#InputName1.form-control(type='text', name='name', required='')
+                  input#InputName1.contactInputs.form-control(type='text', name='name', required='required')
                 .form-group
                   label(for='InputEmail1') Email
-                  input#InputEmail1.form-control(type='email', name='email', required='')
+                  input#InputEmail1.contactInputs.form-control(type='email', name='email', required='required')
                 .form-group
                   label(for='InputSubject') Subject
-                  input#InputSubject.form-control(type='text', name='subject')
+                  input#InputSubject.contactInputs.form-control(type='text', name='subject')
                 .form-group
                   label(for='InputTextarea') Message
-                  textarea#InputTextarea.form-control(name='message', rows='5', required='')
+                  textarea#InputTextarea.contactInputs.form-control(name='message', rows='5', required='')
                 button.btn.btn-primary(type='submit', name='submit') Send Message
           // /.col-md-6
           .col-md-6
@@ -777,3 +777,21 @@ html(lang='en')
     script(src='public/js/jquery.fitvids.js')
     script(src='https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false')
     script(src='public/js/scripts.js')
+  script.
+    var formSubmit = function(event){
+      event.preventDefault();
+      var input = $( '#contactForm' ).serialize();
+      $.post($('#contactForm').attr('action'), input )
+        .done(function(data){
+          if(data.success){
+            alert(data.message)
+            $('.contactInputs').val('')
+          }
+          //- if (data.redirect) window.location.replace(data.redirect)
+          })
+          .fail(function(data){
+          if(data){alert('Something went wrong. Please refresh and try again.')
+          console.log(data, 'failure')
+          }
+      })
+    }

@@ -144,21 +144,21 @@ app.get('/robots.txt', (req, res) => {
 // app.use("/api/usershares", userShareRoutes);
 // app.use("/api/keywords", keywordRoutes);
 // app.use("/api/locations", locationRoutes);
-app.use("/email", emailRoutes);
 
 // app.use("/auth", noAuth, authUserRoutes);
 
 // app.use("/cms", needAuth);
 // app.get("/cms/index", (req, res, next) => {
-//     res.render('cms/cmsIndex', {});
-// });
-// app.use("/cms/seeds", seedsRoutes);
-// app.use("/cms/users", cmsUserRoutes);
-
-// app.use("/cms/", cmsRoutes);
-
-app.use("/", indexRoutes);
-app.use("/pres", presRoutes);
+    //     res.render('cms/cmsIndex', {});
+    // });
+    // app.use("/cms/seeds", seedsRoutes);
+    // app.use("/cms/users", cmsUserRoutes);
+    
+    // app.use("/cms/", cmsRoutes);
+    
+    app.use("/", indexRoutes);
+    app.use("/pres", presRoutes);
+    app.use("/email", emailRoutes);
 
 
 

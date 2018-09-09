@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const csrf = require('csurf');
-const csrfProtection = csrf({ cookie: false });
+const csrfProtection = csrf({ cookie: true });
 
 
 //====EMAIL SETTINGS & ROUTE====//
@@ -15,9 +15,9 @@ router.post('/', csrfProtection, (req, res, next) => {
         
 		 Email: ${req.body.email} 
 		
-		 First Name: ${req.body.name}
+		 Name: ${req.body.name}
 				
-		 Message: "${req.body.content}"
+		 Message: "${req.body.message}"
 	`
   var data = {
     from: 'contactForm@ayo.works',
@@ -53,3 +53,5 @@ router.post('/', csrfProtection, (req, res, next) => {
   });
 });
 //================//
+
+module.exports = router;

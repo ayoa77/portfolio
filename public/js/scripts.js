@@ -1,8 +1,4 @@
-/*
-Theme Name: IAMX
-Author: Ahmed Faruk
-Author URL: farukahmed.com
-*/
+
 
 /*
     = Preloader
@@ -211,9 +207,9 @@ jQuery(function ($) {
     // -------------------------------------------------------------
     // Fit Vids
     // -------------------------------------------------------------
-    (function () {
-        $(".video-container").fitVids();
-    }());
+    // (function () {
+    //     $(".video-container").fitVids();
+    // }());
 
 
 

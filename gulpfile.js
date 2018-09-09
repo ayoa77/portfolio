@@ -76,7 +76,7 @@ gulp.task('browser-sync', function () {
         proxy: "http://localhost:3000",
         files: ["public/**/*.*"],
         browser: "google chrome",
-        port: 3000,
+        port: 4000,
         notify: false,
     });
 });
