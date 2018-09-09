@@ -74,6 +74,8 @@ app.use(sessions({
 const presRoutes = require("./routes/presRoutes");
 const indexRoutes = require("./routes/indexRoutes");
 const cmsRoutes = require("./routes/cmsRoutes");
+const emailRoutes = require("./routes/emailRoutes");
+
 //fs.readdirSync(__dirname + '/routes').forEach(function (filename) {
 //    filename = filename.slice(0, -3);
 //    filename = require('./routes/' + filename + '.js');
@@ -142,7 +144,7 @@ app.get('/robots.txt', (req, res) => {
 // app.use("/api/usershares", userShareRoutes);
 // app.use("/api/keywords", keywordRoutes);
 // app.use("/api/locations", locationRoutes);
-// app.use("/email", emailRoutes);
+app.use("/email", emailRoutes);
 
 // app.use("/auth", noAuth, authUserRoutes);
 
