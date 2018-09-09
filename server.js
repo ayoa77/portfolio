@@ -91,11 +91,18 @@ fs.readdirSync(__dirname + '/models').forEach(function (filename) {
 // Connect to the db
 if ('development' == app.get('env')) {
     console.log('you are running in dev mode');
-    mongoose.connect('mongodb://localhost:27017/ebs-pets?socketTimeoutMS=100000');
+    mongoose.connect('mongodb://localhost/ebs-pets?socketTimeoutMS=100000').then(() =>{
+        console.log("Connected to Database");
+    }).catch((err)=>{
+        console.log("Not Connected to Database ERROR! ", err);    });
     app.locals.pretty = true;
 } else if ('production') {
     console.log("you are running in production");
-    mongoose.connect('mongodb://ebs-pets:pets1234EBS@localhost:27017/ebs?authSource=admin');
+    mongoose.connect('ebs-pets:pets1234EBS@localhost:27017/ebs?authSource=admin').then(() => {
+        console.log("Connected to Database");
+    }).catch((err) => {
+        console.log("Not Connected to Database ERROR! ", err);
+    });;
 };
 
 mongoose.Promise = global.Promise;
