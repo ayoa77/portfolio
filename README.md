@@ -1,5 +1,5 @@
 #License: 
-Use it freely but please do not republish, distribute or sell "as-is". Please credit the designer and developer when you use it in your project.
+Use it freely but please do not republish, distribute or sell "as-is".
 
 #Credits: 
 - <a href="http://getbootstrap.com/" target="_blank">Bootstrap</a>
