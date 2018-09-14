@@ -5,7 +5,7 @@ var autoprefixer = require('gulp-autoprefixer');
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 var autoprefixer = require('gulp-autoprefixer');
-// var sass = require('gulp-sass');
+var sass = require('gulp-sass');
 var sourcemaps = require('gulp-sourcemaps');
 var browserSync = require('browser-sync');
 var nodemon = require('gulp-nodemon');
@@ -27,19 +27,32 @@ gulp.task('images', function () {
         .pipe(gulp.dest('dist/images/'));
 });
 
+// gulp.task('styles', function () {
+//     return gulp.src(['./public/styles/scss/**/*.scss', '!./public/styles/scss/partials/**'])
+//         .pipe(sourcemaps.init({ largeFile: true }))
+//         .pipe(sass({
+//             outputStyle: 'compressed',
+//             sourceMap: true
+//         }).on('error', sass.logError))
+//         .pipe(autoprefixer({
+//             browsers: ['last 2 versions'],
+//             cascade: false
+//         }))
+//         // .pipe(sourcemaps.write('./maps'))
+//         .pipe(gulp.dest('./public/styles/css/'))
+//         .pipe(browserSync.reload({ stream: true }))
+// });
+
 gulp.task('styles', function () {
-    return gulp.src(['./public/styles/scss/**/*.scss', '!./public/styles/scss/partials/**'])
-        .pipe(sourcemaps.init({ largeFile: true }))
+    return gulp.src('app/public/scss/main.scss')
         .pipe(sass({
-            outputStyle: 'compressed',
-            sourceMap: true
+            // outputStyle: 'compressed'
         }).on('error', sass.logError))
         .pipe(autoprefixer({
             browsers: ['last 2 versions'],
             cascade: false
         }))
-        // .pipe(sourcemaps.write('./maps'))
-        .pipe(gulp.dest('./public/styles/css/'))
+        .pipe(gulp.dest('app/public/css'))
         .pipe(browserSync.reload({ stream: true }))
 });
 

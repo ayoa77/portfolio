@@ -9,27 +9,27 @@ html(lang='en')
     // Web Fonts
     link(href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700', rel='stylesheet', type='text/css')
     // Bootstrap core CSS
-    link(href='public/bootstrap/css/bootstrap.min.css', rel='stylesheet', media='screen')
+    link(href='/bootstrap/css/bootstrap.min.css', rel='stylesheet', media='screen')
     // Font Awesome CSS
-    link(href='public/css/font-awesome.min.css', rel='stylesheet', media='screen')
+    link(href='/css/font-awesome.min.css', rel='stylesheet', media='screen')
     // Animate css
-    link(href='public/css/animate.css', rel='stylesheet')
+    link(href='/css/animate.css', rel='stylesheet')
     // Magnific css
-    link(href='public/css/magnific-popup.css', rel='stylesheet')
+    link(href='/css/magnific-popup.css', rel='stylesheet')
     // Custom styles CSS
-    link(href='public/css/style.css', rel='stylesheet', media='screen')
+    link(href='/css/style.css', rel='stylesheet', media='screen')
     // Responsive CSS
-    link(href='public/css/responsive.css', rel='stylesheet')
+    link(href='/css/responsive.css', rel='stylesheet')
     // HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
     // WARNING: Respond.js doesn't work if you view the page via file://
     //if lt IE 9
       script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')
       script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
-    link(rel='shortcut icon', href='public/images/ico/ayo-favicon.ico')
-    //- link(rel='apple-touch-icon-precomposed', sizes='144x144', href='public/images/ico/apple-touch-icon-144-precomposed.png')
-    //- link(rel='apple-touch-icon-precomposed', sizes='114x114', href='public/images/ico/apple-touch-icon-114-precomposed.png')
-    //- link(rel='apple-touch-icon-precomposed', sizes='72x72', href='public/images/ico/apple-touch-icon-72-precomposed.png')
-    //- link(rel='apple-touch-icon-precomposed', href='public/images/ico/apple-touch-icon-57-precomposed.png')
+    link(rel='shortcut icon', href='/images/ico/ayo-favicon.ico')
+    //- link(rel='apple-touch-icon-precomposed', sizes='144x144', href='/images/ico/apple-touch-icon-144-precomposed.png')
+    //- link(rel='apple-touch-icon-precomposed', sizes='114x114', href='/images/ico/apple-touch-icon-114-precomposed.png')
+    //- link(rel='apple-touch-icon-precomposed', sizes='72x72', href='/images/ico/apple-touch-icon-72-precomposed.png')
+    //- link(rel='apple-touch-icon-precomposed', href='/images/ico/apple-touch-icon-57-precomposed.png')
   body
     // Preloader
     #tt-preloader
@@ -82,7 +82,7 @@ html(lang='en')
               span.icon-bar
               span.icon-bar
             a.navbar-brand(href='index.html')
-              img(src='public/images/logo.png', alt='')
+              img(src='/images/logo.png', alt='')
           #custom-collapse.collapse.navbar-collapse
             ul.nav.navbar-nav.navbar-right
               li
@@ -109,7 +109,7 @@ html(lang='en')
           .col-md-4.col-md-push-8
             .biography
               .myphoto
-                img(src='public/images/myphoto.jpg', alt='')
+                img(src='/images/myphoto.jpg', alt='')
               ul
                 li
                   strong Name:
@@ -147,13 +147,13 @@ html(lang='en')
                 li Frontend Dev
                 li Quick Learner
             //- .my-signature
-            //-   img(src='public/images/sign.png', alt='')
+            //-   img(src='/images/sign.png', alt='')
             .download-button
               a.btn.btn-info.btn-lg(href='#contact')
                 i.fa.fa-paper-plane
                 | Send me a message
-                //-need to set up uploads and download for my cv here...make public available :)
-              a.btn.btn-primary.btn-lg(href='/download', download='AyoAmadisResume')
+                //-need to set up uploads and download for my cv here...make  available :)
+              a.btn.btn-primary.btn-lg(href='/download')
                 i.fa.fa-download
                 | Download my CV
         // /.row
@@ -416,12 +416,12 @@ html(lang='en')
                 .portfolio
                   .tt-overlay
                   .links
-                    a.image-link(href='public/images/works/petbond-portfolio.png')
+                    a.image-link(href='/images/works/petbond-portfolio.png')
                       i.fa.fa-search-plus
                     a(href='https://petbond.com.tw')
                       i.fa.fa-link
                   // /.links
-                  img(src='public/images/works/petbond-portfolio.png', alt='image')
+                  img(src='/images/works/petbond-portfolio.png', alt='image')
                   .portfolio-info
                     h3 Petbond
                   // /.portfolio-info
@@ -433,12 +433,12 @@ html(lang='en')
                 .portfolio
                   .tt-overlay
                   .links
-                    a.image-link(href='public/images/works/jarvis.png')
+                    a.image-link(href='/images/works/jarvis.png')
                       i.fa.fa-search-plus
                     a(href='http://jarvis.frankish.international/')
                       i.fa.fa-link
                   // /.links
-                  img(src='public/images/works/jarvis.png', alt='image')
+                  img(src='/images/works/jarvis.png', alt='image')
                   .portfolio-info
                     h3 Jarvis.Ai
                   // /.portfolio-info
@@ -450,12 +450,12 @@ html(lang='en')
                 .portfolio
                   .tt-overlay
                   .links
-                    a.image-link(href='public/images/works/portfolio-3.jpg')
+                    a.image-link(href='/images/works/portfolio-3.jpg')
                       i.fa.fa-search-plus
                     a(href='/flashcards')
                       i.fa.fa-link
                   // /.links
-                  img(src='public/images/works/portfolio-3.jpg', alt='image')
+                  img(src='/images/works/portfolio-3.jpg', alt='image')
                   .portfolio-info
                     h3 中文 flashcards
                   // /.portfolio-info
@@ -467,12 +467,12 @@ html(lang='en')
                 .portfolio
                   .tt-overlay
                   .links
-                    a.image-link(href='public/images/works/canopy.png')
+                    a.image-link(href='/images/works/canopy.png')
                       i.fa.fa-search-plus
                     a(href='http://canopy.frankish.international')
                       i.fa.fa-link
                   // /.links
-                  img(src='public/images/works/canopy.png', alt='image')
+                  img(src='/images/works/canopy.png', alt='image')
                   .portfolio-info
                     h3 Canopy
                   // /.portfolio-info
@@ -484,12 +484,12 @@ html(lang='en')
                 .portfolio
                   .tt-overlay
                   .links
-                    a.image-link(href='public/images/works/mypal.png')
+                    a.image-link(href='/images/works/mypal.png')
                       i.fa.fa-search-plus
                     a(href='http://mypal.frankish.international')
                       i.fa.fa-link
                   // /.links
-                  img(src='public/images/works/mypal.png', alt='image')
+                  img(src='/images/works/mypal.png', alt='image')
                   .portfolio-info
                     h3 MyPal
                   // /.portfolio-info
@@ -501,12 +501,12 @@ html(lang='en')
                 .portfolio
                   .tt-overlay
                   .links
-                    a.image-link(href='public/images/works/BoC.png')
+                    a.image-link(href='/images/works/BoC.png')
                       i.fa.fa-search-plus
                     //- a(href='#')
                     //-   i.fa.fa-link
                   // /.links
-                  img(src='public/images/works/BoC.png', alt='image')
+                  img(src='/images/works/BoC.png', alt='image')
                   .portfolio-info
                     h3 Box Of Chocolates
                   // /.portfolio-info
@@ -518,12 +518,12 @@ html(lang='en')
                 .portfolio
                   .tt-overlay
                   .links
-                    a.image-link(href='public/images/works/portfolio-7.jpg')
+                    a.image-link(href='/images/works/portfolio-7.jpg')
                       i.fa.fa-search-plus
                     a(href='#')
                       i.fa.fa-link
                   // /.links
-                  img(src='public/images/works/portfolio-7.jpg', alt='image')
+                  img(src='/images/works/portfolio-7.jpg', alt='image')
                   .portfolio-info
                     h3 Portfolio Title
                   // /.portfolio-info
@@ -535,12 +535,12 @@ html(lang='en')
                 .portfolio
                   .tt-overlay
                   .links
-                    a.image-link(href='public/images/works/portfolio-8.jpg')
+                    a.image-link(href='/images/works/portfolio-8.jpg')
                       i.fa.fa-search-plus
                     a(href='#')
                       i.fa.fa-link
                   // /.links
-                  img(src='public/images/works/portfolio-8.jpg', alt='image')
+                  img(src='/images/works/portfolio-8.jpg', alt='image')
                   .portfolio-info
                     h3 Portfolio Title
                   // /.portfolio-info
@@ -589,7 +589,7 @@ html(lang='en')
               .figure
                 .post-thumbnail
                   a(href='#')
-                    img.img-responsive(src='public/images/blog/01.jpg', alt='')
+                    img.img-responsive(src='/images/blog/01.jpg', alt='')
                 i.fa.fa-file-photo-o
               // /.figure
               header.entry-header
@@ -622,7 +622,7 @@ html(lang='en')
               .figure
                 .post-thumbnail
                   a(href='#')
-                    img.img-responsive(src='public/images/blog/02.jpg', alt='')
+                    img.img-responsive(src='/images/blog/02.jpg', alt='')
                 i.fa.fa-file-video-o
               // /.figure
               header.entry-header
@@ -655,7 +655,7 @@ html(lang='en')
               .figure
                 .post-thumbnail
                   a(href='#')
-                    img.img-responsive(src='public/images/blog/03.jpg', alt='')
+                    img.img-responsive(src='/images/blog/03.jpg', alt='')
                 i.fa.fa-quote-left
               // /.figure
               header.entry-header
@@ -762,21 +762,21 @@ html(lang='en')
       a(href='#about')
         i.fa.fa-angle-up
     // Javascript files
-    script(src='public/js/jquery.js')
-    script(src='public/bootstrap/js/bootstrap.min.js')
-    script(src='public/js/jquery.stellar.min.js')
-    script(src='public/js/jquery.sticky.js')
-    script(src='public/js/smoothscroll.js')
-    script(src='public/js/wow.min.js')
-    script(src='public/js/jquery.countTo.js')
-    script(src='public/js/jquery.inview.min.js')
-    script(src='public/js/jquery.easypiechart.js')
-    script(src='public/js/jquery.shuffle.min.js')
-    script(src='public/js/jquery.magnific-popup.min.js')
+    script(src='/js/jquery.js')
+    script(src='/bootstrap/js/bootstrap.min.js')
+    script(src='/js/jquery.stellar.min.js')
+    script(src='/js/jquery.sticky.js')
+    script(src='/js/smoothscroll.js')
+    script(src='/js/wow.min.js')
+    script(src='/js/jquery.countTo.js')
+    script(src='/js/jquery.inview.min.js')
+    script(src='/js/jquery.easypiechart.js')
+    script(src='/js/jquery.shuffle.min.js')
+    script(src='/js/jquery.magnific-popup.min.js')
     //- script(src='https://a.vimeocdn.com/js/froogaloop2.min.js')
-    script(src='public/js/jquery.fitvids.js')
+    script(src='/js/jquery.fitvids.js')
     script(src='https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false')
-    script(src='public/js/scripts.js')
+    script(src='/js/scripts.js')
   script.
     var formSubmit = function(event){
       event.preventDefault();
