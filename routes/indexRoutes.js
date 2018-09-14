@@ -11,11 +11,11 @@ router.get("/", csrfProtection, (req, res, next) => {
 
 router.get('/download', function (req, res) {
 
-    var file = fs.createReadStream('./public/cv/ayoCV.pdf');
-    var stat = fs.statSync('./public/cv/ayoCV.pdf');
+    var file = fs.createReadStream('./public/cv/AmadiResume.pdf');
+    var stat = fs.statSync('./public/cv/AmadiResume.pdf');
     res.setHeader('Content-Length', stat.size);
     res.setHeader('Content-Type', 'application/pdf');
-    res.setHeader('Content-Disposition', 'attachment; filename=ayoCV.pdf');
+    res.setHeader('Content-Disposition', 'attachment; filename=AmadiResume.pdf');
     file.pipe(res);
 });
 
