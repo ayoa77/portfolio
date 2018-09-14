@@ -27,7 +27,7 @@ require('dotenv').config();
 const pug = require('pug');
 app.set('view engine', 'pug');
 app.set('views', `${__dirname}/views`);
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static('public'));
 
 // configure the app to use bodyParser()
 app.use(cookieParser());
