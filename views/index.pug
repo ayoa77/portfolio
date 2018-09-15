@@ -2,12 +2,20 @@ doctype html
 html(lang='en')
   include ../mixins/_google_analytics.pug
   head
+    script(async src="https://www.googletagmanager.com/gtag/js?id=UA-98460649-2")
+    script.    
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-98460649-2');
+
     meta(charset='UTF-8')
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
     meta(name='description', content='Portfolio')
     meta(name='author', content='Ayo Amadi')
     link(rel='shortcut icon', href='/images/ico/ayo-favicon.ico')
-    +ga
+    //- +ga
     title Ayo Amadi
     // Web Fonts
     link(href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700', rel='stylesheet', type='text/css')
