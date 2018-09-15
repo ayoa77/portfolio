@@ -8,7 +8,8 @@ html(lang='en')
     link(rel='shortcut icon', href='/images/ico/ayo-favicon.ico')
     script( async src="https://www.google-analytics.com/analytics.js")
     script.
-      function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      (function(w,d,s,l,i)
+      {w[l]=w[l]||[];w[l].push({'gtm.start':
       new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
       j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
@@ -38,6 +39,8 @@ html(lang='en')
     //- link(rel='apple-touch-icon-precomposed', sizes='72x72', href='/images/ico/apple-touch-icon-72-precomposed.png')
     //- link(rel='apple-touch-icon-precomposed', href='/images/ico/apple-touch-icon-57-precomposed.png')
   body
+    noscript
+      iframe(src='https://www.googletagmanager.com/ns.html?id=GTM-XXXX', height='0', width='0', style='display:none;visibility:hidden')
     // Preloader
     #tt-preloader
       #pre-status
