@@ -1843,3 +1843,7 @@ Icon for all respective meta
         opacity: 0;
     }
 }
+
+.navbar-toggle{
+    z-index: 10;
+}

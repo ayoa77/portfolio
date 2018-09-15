@@ -84,7 +84,7 @@ html(lang='en')
               span.icon-bar
               span.icon-bar
               span.icon-bar
-            a.navbar-brand(href='index.html')
+            a.navbar-brand(href='/')
               img(src='/images/logo.png', alt='')
           #custom-collapse.collapse.navbar-collapse
             ul.nav.navbar-nav.navbar-right
@@ -244,7 +244,7 @@ html(lang='en')
                       // /timeline-heading
                       .timeline-body
                         p
-                          | Working at the largest English Center in Vietnam was a fun experience. This was able to use this opportunity to greatly improve my communication skills.
+                          | Working at the largest English Center in Vietnam was a fun experience. This opportunity greatly improved my communication skills.
                   // /posted-date
         // /row
         .row
@@ -403,15 +403,15 @@ html(lang='en')
         h2.section-title.wow.fadeInUp Works
         ul#filter.list-inline
           li
-            a.active(data-group='all') All
+            a.no-hover.active(data-group='all') All
           li
-            a(data-group='ruby') Ruby
+            a.no-hover(data-group='ruby') Ruby
           li
-            a(data-group='nodeJS') NodeJS
+            a.no-hover(data-group='nodeJS') NodeJS
           li
-            a(data-group='fullstack') Full-Stack
+            a.no-hover(data-group='fullstack') Full-Stack
           li
-            a(data-group='backend') Backend
+            a.no-hover(data-group='backend') Backend
         .row
           #grid
             .portfolio-item.col-xs-12.col-sm-4.col-md-3(data-groups='["all", "backend", "nodeJS"]')
@@ -421,7 +421,7 @@ html(lang='en')
                   .links
                     a.image-link(href='/images/works/petbond-portfolio.png')
                       i.fa.fa-search-plus
-                    a(href='https://petbond.com.tw')
+                    a(href='https://petbond.com.tw', target="_blank")
                       i.fa.fa-link
                   // /.links
                   img(src='/images/works/petbond-portfolio.png', alt='image')
@@ -438,7 +438,7 @@ html(lang='en')
                   .links
                     a.image-link(href='/images/works/jarvis.png')
                       i.fa.fa-search-plus
-                    a(href='http://jarvis.frankish.international/')
+                    a(href='http://jarvis.frankish.international/', target="_blank")
                       i.fa.fa-link
                   // /.links
                   img(src='/images/works/jarvis.png', alt='image')
@@ -455,7 +455,7 @@ html(lang='en')
                   .links
                     a.image-link(href='/images/works/portfolio-3.jpg')
                       i.fa.fa-search-plus
-                    a(href='/flashcards')
+                    a(href='/flashcards', target="_blank")
                       i.fa.fa-link
                   // /.links
                   img(src='/images/works/portfolio-3.jpg', alt='image')
@@ -472,7 +472,7 @@ html(lang='en')
                   .links
                     a.image-link(href='/images/works/canopy.png')
                       i.fa.fa-search-plus
-                    a(href='http://canopy.frankish.international')
+                    a(href='http://canopy.frankish.international', target="_blank")
                       i.fa.fa-link
                   // /.links
                   img(src='/images/works/canopy.png', alt='image')
@@ -489,7 +489,7 @@ html(lang='en')
                   .links
                     a.image-link(href='/images/works/mypal.png')
                       i.fa.fa-search-plus
-                    a(href='http://mypal.frankish.international')
+                    a(href='http://mypal.frankish.international', target="_blank")
                       i.fa.fa-link
                   // /.links
                   img(src='/images/works/mypal.png', alt='image')
@@ -506,7 +506,7 @@ html(lang='en')
                   .links
                     a.image-link(href='/images/works/BoC.png')
                       i.fa.fa-search-plus
-                    //- a(href='#')
+                    //- a(href='#', target="_blank")
                     //-   i.fa.fa-link
                   // /.links
                   img(src='/images/works/BoC.png', alt='image')
@@ -769,7 +769,7 @@ html(lang='en')
     script(src='/bootstrap/js/bootstrap.min.js')
     script(src='/js/jquery.stellar.min.js')
     script(src='/js/jquery.sticky.js')
-    script(src='/js/smoothscroll.js')
+    //- script(src='/js/smoothscroll.js')
     script(src='/js/wow.min.js')
     script(src='/js/jquery.countTo.js')
     script(src='/js/jquery.inview.min.js')

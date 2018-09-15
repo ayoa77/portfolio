@@ -337,13 +337,11 @@ jQuery(function ($) {
 
 //     }());
 
-    $(document).ready(function () {
-        $("a").on("click touchend", function (e) {
+        $("a.no-hover").on("click touchend", function (e) {
             var el = $(this);
             var link = el.attr("href");
-            window.location = link;
+            el.unbind('hover');
         });
-    });
 });
 
 
