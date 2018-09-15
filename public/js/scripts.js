@@ -342,7 +342,7 @@ jQuery(function ($) {
             el.unbind('hover');
         });
 
-        $("tt-overlay").on("touchend", function (e) {
+        $(".tt-overlay").on("touchend", function (e) {
             var el = $(this);
             el.css('opacity', '1');
         });
