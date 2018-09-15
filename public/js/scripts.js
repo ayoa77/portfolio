@@ -344,6 +344,7 @@ jQuery(function ($) {
 
         $(".tt-overlay").on("touchend", function (e) {
             var el = $(this);
+            $('.tt-overlay').css('opacity', '0');
             el.css('opacity', '1');
         });
 });
