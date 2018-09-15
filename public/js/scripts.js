@@ -344,32 +344,34 @@ jQuery(function ($) {
             el.unbind('hover');
         });
 
-        $(".portfolio").on("touchstart", function (e) {
+        $(".tt-overlay").on("touchstart", function (e) {
             var el = $(this);
             $('.tt-overlay').css('opacity', '0');
-            el.find('.tt-overlay').css('opacity', '1');
+            el.css('opacity', '1');
             $('.links').css('opacity', '0');
-            el.find('.links').css('opacity', '1');
+            el.siblings().css('opacity', '1');
             $('.portfolio-info').css('opacity', '0');
-            el.find('.portfolio-info').css('opacity', '1');
+            el.siblings().css('opacity', '1');
         });
 
         $(".portfolio").not("touchstart", function (e) {
             $('.tt-overlay').css({'opacity': '0',
-                                 "-webkit-transform": "translate(0,0)",
-                                "-moz-transform": "translate(0,0)",
-                                "-ms-transform": "translate(0,0)",
-                                "-o-transform": "translate(0,0)",
-                                "transform": "translate(0,0)"
+                                 "-webkit-transform": "translate(0-50px)",
+                                "-moz-transform": "translate(0-50px)",
+                                "-ms-transform": "translate(0-50px)",
+                                "-o-transform": "translate(0-50px)",
+                                "transform": "translate(0-50px)"
                                 });
-            $('.links').css({'opacity': '0',
-                                                    -webkit-transform: translate(0,0);
-    -moz-transform: translate(0,0);
-    -ms-transform: translate(0,0);
-    -o-transform: translate(0,0);
-    transform: translate(0,0);
-);
-            $('.portfolio-info').css('bottom', '0');
+            $('.links').css({
+                'opacity': '0',
+                "-webkit-transform": "translate(0-50px)",
+                "-moz-transform": "translate(0-50px)",
+                "-ms-transform": "translate(0-50px)",
+                "-o-transform": "translate(0-50px)",
+                "transform": "translate(0-50px)"
+            });
+
+            $('.portfolio-info').css('bottom', '-100%');
         });
 });
 
