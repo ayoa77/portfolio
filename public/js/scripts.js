@@ -339,8 +339,12 @@ jQuery(function ($) {
 
         $("a.no-hover").on("click touchend", function (e) {
             var el = $(this);
-            var link = el.attr("href");
             el.unbind('hover');
+        });
+
+        $("tt-overlay").on("touchend", function (e) {
+            var el = $(this);
+            el.css('opacity', '1');
         });
 });
 

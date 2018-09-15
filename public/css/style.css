@@ -286,7 +286,7 @@ ul.list-check li::before {
 
 .section-title::after {
     content: "";
-    background: url(../../public/images/section-divider.png) no-repeat 0 0;
+    background: url(/images/section-divider.png) no-repeat 0 0;
     height: 15px;
     width: 113px;
     position: absolute;
@@ -587,7 +587,7 @@ SOCIAL ICON
 
 .myphoto{
     position: relative;
-    background: url(../../public/images/photo-frame.png) bottom center no-repeat;
+    background: url(/images/photo-frame.png) bottom center no-repeat;
     background-size: contain;
 }
 
@@ -1255,7 +1255,7 @@ Resume Timeline
 
 /* === Facts Section === */
 .facts-section {
-    background: url(../../public/images/counter-bg.jpg) no-repeat center center;
+    background: url(/images/counter-bg.jpg) no-repeat center center;
     background-attachment: fixed;
     background-size: cover;
     color: #FFFAF6;  
@@ -1420,7 +1420,7 @@ Icon for all respective meta
 
 /* === Hire Section === */
 .hire-section {
-    background: url(../../public/images/hire-bg.jpg) no-repeat top center #8C5F66;
+    background: url(/images/hire-bg.jpg) no-repeat top center #8C5F66;
     background-attachment: fixed;
     background-size: cover;
     color: #FFFAF6;  
@@ -1674,7 +1674,7 @@ Icon for all respective meta
 
 /*SERVICE SECTION*/
 .service-section {
-    background: url(../../public/images/service-bg.jpg) no-repeat center center;
+    background: url(/images/service-bg.jpg) no-repeat center center;
     background-size: cover;
     padding:120px 0;
 }

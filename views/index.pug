@@ -5,6 +5,13 @@ html(lang='en')
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
     meta(name='description', content='Portfolio')
     meta(name='author', content='Ayo Amadi')
+    link(rel='shortcut icon', href='/images/ico/ayo-favicon.ico')
+    script( async src="https://www.googletagmanager.com/gtag/js?id=UA-98460649-2")
+    script.
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-98460649-2');
     title Ayo Amadi
     // Web Fonts
     link(href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700', rel='stylesheet', type='text/css')
@@ -25,7 +32,6 @@ html(lang='en')
     //if lt IE 9
       script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')
       script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
-    link(rel='shortcut icon', href='/images/ico/ayo-favicon.ico')
     //- link(rel='apple-touch-icon-precomposed', sizes='144x144', href='/images/ico/apple-touch-icon-144-precomposed.png')
     //- link(rel='apple-touch-icon-precomposed', sizes='114x114', href='/images/ico/apple-touch-icon-114-precomposed.png')
     //- link(rel='apple-touch-icon-precomposed', sizes='72x72', href='/images/ico/apple-touch-icon-72-precomposed.png')
@@ -448,19 +454,19 @@ html(lang='en')
                 // /.portfolio
               // /.portfolio-bg
             // /.portfolio-item
-            .portfolio-item.col-xs-12.col-sm-4.col-md-3(data-groups='["all", "fullstack", "backend", "nodeJS"]')
-              .portfolio-bg
-                .portfolio
-                  .tt-overlay
-                  .links
-                    a.image-link(href='/images/works/portfolio-3.jpg')
-                      i.fa.fa-search-plus
-                    a(href='/flashcards', target="_blank")
-                      i.fa.fa-link
-                  // /.links
-                  img(src='/images/works/portfolio-3.jpg', alt='image')
-                  .portfolio-info
-                    h3 中文 flashcards
+            //- .portfolio-item.col-xs-12.col-sm-4.col-md-3(data-groups='["all", "fullstack", "backend", "nodeJS"]')
+            //-   .portfolio-bg
+            //-     .portfolio
+            //-       .tt-overlay
+            //-       .links
+            //-         a.image-link(href='/images/works/portfolio-3.jpg')
+            //-           i.fa.fa-search-plus
+            //-         a(href='/flashcards', target="_blank")
+            //-           i.fa.fa-link
+            //-       // /.links
+            //-       img(src='/images/works/portfolio-3.jpg', alt='image')
+            //-       .portfolio-info
+            //-         h3 中文 flashcards
                   // /.portfolio-info
                 // /.portfolio
               // /.portfolio-bg
@@ -778,7 +784,6 @@ html(lang='en')
     script(src='/js/jquery.magnific-popup.min.js')
     //- script(src='https://a.vimeocdn.com/js/froogaloop2.min.js')
     script(src='/js/jquery.fitvids.js')
-    script(src='https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false')
     script(src='/js/scripts.js')
   script.
     var formSubmit = function(event){
