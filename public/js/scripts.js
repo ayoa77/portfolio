@@ -169,6 +169,8 @@ jQuery(function ($) {
         $('#filter a').click(function (e) {
             e.preventDefault();
 
+            // remove overlays
+            $('.tt-overlay').css('opacity', '0');
             // set active class
             $('#filter a').removeClass('active');
             $(this).addClass('active');
@@ -342,10 +344,32 @@ jQuery(function ($) {
             el.unbind('hover');
         });
 
-        $(".tt-overlay").on("touchend", function (e) {
+        $(".portfolio").on("touchstart", function (e) {
             var el = $(this);
             $('.tt-overlay').css('opacity', '0');
-            el.css('opacity', '1');
+            el.find('.tt-overlay').css('opacity', '1');
+            $('.links').css('opacity', '0');
+            el.find('.links').css('opacity', '1');
+            $('.portfolio-info').css('opacity', '0');
+            el.find('.portfolio-info').css('opacity', '1');
+        });
+
+        $(".portfolio").not("touchstart", function (e) {
+            $('.tt-overlay').css({'opacity': '0',
+                                 "-webkit-transform": "translate(0,0)",
+                                "-moz-transform": "translate(0,0)",
+                                "-ms-transform": "translate(0,0)",
+                                "-o-transform": "translate(0,0)",
+                                "transform": "translate(0,0)"
+                                });
+            $('.links').css({'opacity': '0',
+                                                    -webkit-transform: translate(0,0);
+    -moz-transform: translate(0,0);
+    -ms-transform: translate(0,0);
+    -o-transform: translate(0,0);
+    transform: translate(0,0);
+);
+            $('.portfolio-info').css('bottom', '0');
         });
 });
 
