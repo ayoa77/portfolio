@@ -124,22 +124,22 @@ html(lang='en')
               ul
                 li
                   strong Name:
-                  |  Ayo Amadi || 馬艾哲
+                  p.pull-right  Ayo Amadi || 馬艾哲
                 //- li
                 //-   strong Date of birth:
-                //-   |  09 Sep 1989
+                  //-  p.pull-right |  09 Sep 1989
                 //- li
                 //-   strong Address:
-                //-   |  239/2 Awesome Street, USA
+                  //-  p.pull-right |  239/2 Awesome Street, USA
                 li
                   strong Nationality:
-                  |  American
+                  p.pull-right  American
                 li
-                  strong Phone:
-                  |  +886 975 878 441
+                  strong Phone: 
+                  a.pull-right(href='tel:+886975878441', data-rel='external') +886 975 878 441
                 li
-                  strong Email:
-                  |  ayodeleamadi@gmail.com
+                  strong Email: 
+                  a.pull-right(href='mailto:ayodeleamadi@gmail.com', data-rel='external') ayodeleamadi@gmail.com
           // col-md-4
           .col-md-8.col-md-pull-4
             .short-info.wow.fadeInUp
@@ -427,9 +427,9 @@ html(lang='en')
                 .portfolio
                   .tt-overlay
                   .links
-                    a.image-link(href='/images/works/petbond-portfolio.png')
+                    a.link-selector.image-link(href='/images/works/petbond-portfolio-big.png')
                       i.fa.fa-search-plus
-                    a(href='https://petbond.com.tw', target="_blank")
+                    a.link-selector(href='https://petbond.com.tw', target="_blank")
                       i.fa.fa-link
                   // /.links
                   img(src='/images/works/petbond-portfolio.png', alt='image')
@@ -444,9 +444,9 @@ html(lang='en')
                 .portfolio
                   .tt-overlay
                   .links
-                    a.image-link(href='/images/works/jarvis.png')
+                    a.link-selector.image-link(href='/images/works/jarvis-big.png')
                       i.fa.fa-search-plus
-                    a(href='http://jarvis.frankish.international/', target="_blank")
+                    a.link-selector(href='http://jarvis.frankish.international/', target="_blank")
                       i.fa.fa-link
                   // /.links
                   img(src='/images/works/jarvis.png', alt='image')
@@ -461,9 +461,10 @@ html(lang='en')
             //-     .portfolio
             //-       .tt-overlay
             //-       .links
-            //-         a.image-link(href='/images/works/portfolio-3.jpg')
+            //-         a.link-selector.image-link(href='/images/works/portfolio-3-big.jpg')
             //-           i.fa.fa-search-plus
-            //-         a(href='/flashcards', target="_blank")
+            // /.link-selector/-
+                       a(href='/flashcards', target="_blank")
             //-           i.fa.fa-link
             //-       // /.links
             //-       img(src='/images/works/portfolio-3.jpg', alt='image')
@@ -478,9 +479,9 @@ html(lang='en')
                 .portfolio
                   .tt-overlay
                   .links
-                    a.image-link(href='/images/works/canopy.png')
+                    a.link-selector.image-link(href='/images/works/canopy-big.png')
                       i.fa.fa-search-plus
-                    a(href='http://canopy.frankish.international', target="_blank")
+                    a.link-selector(href='http://canopy.frankish.international', target="_blank")
                       i.fa.fa-link
                   // /.links
                   img(src='/images/works/canopy.png', alt='image')
@@ -495,9 +496,9 @@ html(lang='en')
                 .portfolio
                   .tt-overlay
                   .links
-                    a.image-link(href='/images/works/mypal.png')
+                    a.link-selector.image-link(href='/images/works/mypal-big.png')
                       i.fa.fa-search-plus
-                    a(href='http://mypal.frankish.international', target="_blank")
+                    a.link-selector(href='http://mypal.frankish.international', target="_blank")
                       i.fa.fa-link
                   // /.links
                   img(src='/images/works/mypal.png', alt='image')
@@ -512,9 +513,9 @@ html(lang='en')
                 .portfolio
                   .tt-overlay
                   .links
-                    a.image-link(href='/images/works/BoC.png')
+                    a.link-selector.image-link(href='/images/works/BoC-big.png')
                       i.fa.fa-search-plus
-                    //- a(href='#', target="_blank")
+                    // /.link-selector/- a(href='#', target="_blank")
                     //-   i.fa.fa-link
                   // /.links
                   img(src='/images/works/BoC.png', alt='image')
@@ -529,9 +530,9 @@ html(lang='en')
                 .portfolio
                   .tt-overlay
                   .links
-                    a.image-link(href='/images/works/portfolio-7.jpg')
+                    a.link-selector.image-link(href='/images/works/portfolio-7.jpg')
                       i.fa.fa-search-plus
-                    a(href='#')
+                    a.link-selector(href='#')
                       i.fa.fa-link
                   // /.links
                   img(src='/images/works/portfolio-7.jpg', alt='image')
@@ -546,9 +547,9 @@ html(lang='en')
                 .portfolio
                   .tt-overlay
                   .links
-                    a.image-link(href='/images/works/portfolio-8.jpg')
+                    a.link-selector.image-link(href='/images/works/portfolio-8.jpg')
                       i.fa.fa-search-plus
-                    a(href='#')
+                    a.link-selector(href='#')
                       i.fa.fa-link
                   // /.links
                   img(src='/images/works/portfolio-8.jpg', alt='image')
@@ -696,9 +697,9 @@ html(lang='en')
           // /.col-md-4
         // /.row
         .blog-more.text-center
-          a.btn.btn-primary(href='#') View More
+          a.link-selector.btn.btn-primary(href='#') View More
       // /.container
-    // End Blog Section
+    // End .link-selectorBlog Section
     // Hire Section
     section.hire-section.text-center(data-stellar-vertical-offset='50', data-stellar-background-ratio='0.2')
       .hire-section-bg
@@ -750,9 +751,9 @@ html(lang='en')
                 i.fa.fa-mobile
                 .contact-number
                   strong Phone Number
-                  |                   +886 975 878 441
+                  a(href='tel:+886975878441', data-rel='external') +886 975 878 441
                   br
-                  |                   +1 347 687 8841
+                  a(href='tel:+13476878841', data-rel='external') +1 347 687 8841
             .row
               .col-sm-12
                 .location-map

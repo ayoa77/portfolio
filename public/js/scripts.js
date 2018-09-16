@@ -74,7 +74,7 @@ jQuery(function ($) {
         $('body').scrollspy({
             target: '.navbar-custom',
             offset: 70
-        })
+        });
     }());
 
 
@@ -136,7 +136,7 @@ jQuery(function ($) {
             $('.chart').easyPieChart({
                 //your configuration goes here
                 easing: 'easeOut',
-                delay: 3000,
+                delay: 2000,
                 barColor:'#68c3a3',
                 trackColor:'rgba(255,255,255,0.2)',
                 scaleColor: false,
@@ -170,7 +170,7 @@ jQuery(function ($) {
             e.preventDefault();
 
             // remove overlays
-            $('.tt-overlay').css('opacity', '0');
+            // $('.tt-overlay').css('opacity', '0');
             // set active class
             $('#filter a').removeClass('active');
             $(this).addClass('active');
@@ -344,35 +344,27 @@ jQuery(function ($) {
             el.unbind('hover');
         });
 
-        $(".tt-overlay").on("touchstart", function (e) {
-            var el = $(this);
-            $('.tt-overlay').css('opacity', '0');
-            el.css('opacity', '1');
-            $('.links').css('opacity', '0');
-            el.siblings().css('opacity', '1');
-            $('.portfolio-info').css('opacity', '0');
-            el.siblings().css('opacity', '1');
-        });
+// Handling hovers and clicks for works/links        
+    $("body").on("touchstart", function (e) {
+        $('.tt-overlay.mobile-links-works').removeClass('mobile-links-works')
+        $('.tt-overlay').addClass('mobile-links-works-off');       
+        $('.links.mobile-links-works').removeClass('mobile-links-works')
+        $('.links').addClass('mobile-links-works-off');       
+        $('.portfolio-info.mobile-links-works').removeClass('mobile-links-works')
+        $('.portfolio-info').addClass('mobile-links-works-off');       
+    });
 
-        $(".portfolio").not("touchstart", function (e) {
-            $('.tt-overlay').css({'opacity': '0',
-                                 "-webkit-transform": "translate(0-50px)",
-                                "-moz-transform": "translate(0-50px)",
-                                "-ms-transform": "translate(0-50px)",
-                                "-o-transform": "translate(0-50px)",
-                                "transform": "translate(0-50px)"
-                                });
-            $('.links').css({
-                'opacity': '0',
-                "-webkit-transform": "translate(0-50px)",
-                "-moz-transform": "translate(0-50px)",
-                "-ms-transform": "translate(0-50px)",
-                "-o-transform": "translate(0-50px)",
-                "transform": "translate(0-50px)"
-            });
+    $(".portfolio").on("touchend", function (e) {
+        var el = $(this);
+        el.children().removeClass('mobile-links-works-off');
+        el.children().addClass('mobile-links-works');
+    });
 
-            $('.portfolio-info').css('bottom', '-100%');
-        });
+    $(".tt-overlay").on("touchend", function (e) {
+        var el = $(this).parent();
+        el.children().removeClass('mobile-links-works-off');
+        el.children().addClass('mobile-links-works');
+    });
 });
 
 

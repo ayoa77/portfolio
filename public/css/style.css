@@ -982,14 +982,14 @@ Resume Timeline
 .progress {
     height: 10px;
     margin-bottom: 40px;
-    background-color: #ADBCA5;
+    background-color: rgba(255,255,255,0.2);
     border-radius: 3px;
     box-shadow: none;
     width: 75%;
 }
 
 .progress-bar {
-    background-color: #8C5F66;
+    background-color: #68c3a3;
 }
 .progress-bar span{
     position: absolute;
@@ -1130,6 +1130,7 @@ Resume Timeline
 }
 
 .tt-overlay {
+    z-index: 10;
     position: absolute;
     background-color: rgba(26, 30, 31, 0.85);
     width: 100%;
@@ -1150,6 +1151,7 @@ Resume Timeline
 
 
 .links {
+    z-index: 11;
     width: 90px;
     height: 40px;
     position: absolute;
@@ -1196,6 +1198,7 @@ Resume Timeline
 }
 
 .portfolio-info {
+    z-index: 10;
     position: absolute;
     bottom: -100%;
     left: 0;
@@ -1847,3 +1850,35 @@ Icon for all respective meta
 .navbar-toggle{
     z-index: 10;
 }
+
+
+.links.mobile-links-works,
+.tt-overlay.mobile-links-works{
+    opacity: 1;
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate(0, 0)
+}
+
+.links.mobile-links-works-off,
+.tt-overlay.mobile-links-works-off {
+    opacity: 0;
+    -webkit-transform: translate(0, -50px);
+    -moz-transform: translate(0, -50px);
+    -ms-transform: translate(0, -50px);
+    -o-transform: translate(0, -50px);
+    transform: translate(0, -50px)
+}
+
+.links.mobile-links-works,
+.tt-overlay.mobile-links-works {
+    bottom: 0;
+}
+
+.links.mobile-links-works-off,
+.tt-overlay.mobile-links-works-off {
+    bottom: 100%
+}
+
