@@ -22,5 +22,3 @@ router.get('/download', function (req, res) {
 
 module.exports = router;
 
-// /etc/letsencrypt / live / ayo.works / privkey.pem
-// / etc / letsencrypt / live / ayo.works / fullchain.pem
