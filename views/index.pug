@@ -149,7 +149,7 @@ html(lang='en')
             .short-info.wow.fadeInUp
               h3 What I Do
               p
-                | I have been working as a web app developer for around a year. I am passionate about new tech and expanding my knowledge in my current set of tools excites me. I originally started with Ruby and Ruby on Rails, but recently I have been more focused on JavaScript and NodeJS. I love my work. 
+                | I am passionate about new tech and expanding my knowledge in my current set of tools excites me. I originally started with Ruby and Ruby on Rails, but recently I have been more focused on JavaScript and NodeJS. I am currently beefing my skills with React. I love my work. 
               ul.list-check
                 li Backend Engineering
                 li Database Design
@@ -422,6 +422,23 @@ html(lang='en')
             a.no-hover(data-group='backend') Backend
         .row
           #grid
+            .portfolio-item.col-xs-12.col-sm-4.col-md-3(data-groups='["all", "fullstack", "backend", "nodeJS"]')
+              .portfolio-bg
+                .portfolio
+                  .tt-overlay
+                  .links
+                    a.link-selector.image-link(href='/images/works/luggage-relay-big.png')
+                      i.fa.fa-search-plus
+                    a.link-selector(href='https://luggagerelay.com/en?location=tw', target="_blank")
+                      i.fa.fa-link
+                  // /.links
+                  img(src='/images/works/luggage-relay.png', alt='image')
+                  .portfolio-info
+                    h3 Luggage Relay
+                  // /.portfolio-info
+                // /.portfolio
+              // /.portfolio-bg
+            // /.portfolio-item
             .portfolio-item.col-xs-12.col-sm-4.col-md-3(data-groups='["all", "backend", "nodeJS"]')
               .portfolio-bg
                 .portfolio
@@ -446,7 +463,7 @@ html(lang='en')
                   .links
                     a.link-selector.image-link(href='/images/works/jarvis-big.png')
                       i.fa.fa-search-plus
-                    a.link-selector(href='http://jarvis.frankish.international/', target="_blank")
+                    a.link-selector(href='http://jarvis.flexstudio.io/', target="_blank")
                       i.fa.fa-link
                   // /.links
                   img(src='/images/works/jarvis.png', alt='image')
@@ -456,20 +473,19 @@ html(lang='en')
                 // /.portfolio
               // /.portfolio-bg
             // /.portfolio-item
-            //- .portfolio-item.col-xs-12.col-sm-4.col-md-3(data-groups='["all", "fullstack", "backend", "nodeJS"]')
-            //-   .portfolio-bg
-            //-     .portfolio
-            //-       .tt-overlay
-            //-       .links
-            //-         a.link-selector.image-link(href='/images/works/portfolio-3-big.jpg')
-            //-           i.fa.fa-search-plus
-            // /.link-selector/-
-                       a(href='/flashcards', target="_blank")
-            //-           i.fa.fa-link
-            //-       // /.links
-            //-       img(src='/images/works/portfolio-3.jpg', alt='image')
-            //-       .portfolio-info
-            //-         h3 中文 flashcards
+            .portfolio-item.col-xs-12.col-sm-4.col-md-3(data-groups='["all", "fullstack", "backend", "nodeJS"]')
+              .portfolio-bg
+                .portfolio
+                  .tt-overlay
+                  .links
+                    a.link-selector.image-link(href='/images/works/portfolio-3-big.jpg')
+                      i.fa.fa-search-plus
+                    a(href='/flashcards', target="_blank").link-selector 
+                      i.fa.fa-link
+                  // /.links
+                  img(src='/images/works/portfolio-3.jpg', alt='image')
+                  .portfolio-info
+                    h3 中文 flashcards
                   // /.portfolio-info
                 // /.portfolio
               // /.portfolio-bg
@@ -481,7 +497,7 @@ html(lang='en')
                   .links
                     a.link-selector.image-link(href='/images/works/canopy-big.png')
                       i.fa.fa-search-plus
-                    a.link-selector(href='http://canopy.frankish.international', target="_blank")
+                    a.link-selector(href='http://canopy.flexstudio.io', target="_blank")
                       i.fa.fa-link
                   // /.links
                   img(src='/images/works/canopy.png', alt='image')
@@ -498,8 +514,8 @@ html(lang='en')
                   .links
                     a.link-selector.image-link(href='/images/works/mypal-big.png')
                       i.fa.fa-search-plus
-                    a.link-selector(href='http://mypal.frankish.international', target="_blank")
-                      i.fa.fa-link
+                    //- a.link-selector(href='http://mypal.frankish.international', target="_blank")
+                    //-   i.fa.fa-link
                   // /.links
                   img(src='/images/works/mypal.png', alt='image')
                   .portfolio-info
