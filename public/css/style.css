@@ -1142,6 +1142,8 @@ Resume Timeline
 .links,
 .links a i,
 .links a i::after,
+.links a p,
+.links a p::after,
 .tt-overlay {
     -webkit-transition: all 400ms;
     -moz-transition: all 400ms;
@@ -1151,6 +1153,9 @@ Resume Timeline
 
 
 .links {
+    display:flex;
+    text-align: center;
+    justify-content: center;
     z-index: 11;
     width: 90px;
     height: 40px;
@@ -1158,7 +1163,7 @@ Resume Timeline
     top: 40%;
     left: 50%;
     margin-top: -20px;
-    margin-left: -45px;
+    margin-left: -47px;
     opacity: 0;
     -webkit-transform: translate(0,-50px);
     -moz-transform: translate(0,-50px);
@@ -1167,17 +1172,53 @@ Resume Timeline
     transform: translate(0,-50px);
 }
 
-.links a i{
+/* .links.one{
+    margin-left: -47px;
+}
+.links.two{
+    margin-left: -47px;
+} */
+
+.links a i,
+.links a p {
     position: relative;
     color: #8C5F66;
     font-size: 16px;
     margin: 0 13px;
     z-index: 100;
 }
-.links a:hover i {
-   color:  #FFFAF6;
+
+.links a p {
+    justify-content: center;
+    text-align:center;
+    margin-left: 12px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #FFFAF6;
+    font-weight: 500;
+    line-height: 17px;
 }
-.links a i::after{
+.links a.center p {
+    justify-content: center;
+    text-align:center;
+    margin: 10px 0px;
+    color: #FFFAF6;
+    font-weight: 500;
+}
+.links a{
+    justify-content: center;
+    display: flex;
+}
+
+.links a:hover i{
+    color: #FFFAF6;
+}
+.links a:hover p {
+    color: #8C5F66;
+}
+
+.links a i::after {
     position: absolute;
     content: "";
     left: -7px;
@@ -1188,13 +1229,44 @@ Resume Timeline
     z-index: -1;
     border-radius: 3px;
     -webkit-transform: rotate(45deg);
-       -moz-transform: rotate(45deg);
-        -ms-transform: rotate(45deg);
-         -o-transform: rotate(45deg);
-            transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
 }
+
+.links a p::after {
+    position: absolute;
+    content: "";
+    left: -5px;
+    top: -7px;
+    width: 65px;
+    height: 30px;
+    border: 1px solid #8C5F66;
+    z-index: -1;
+    border-radius: 3px;
+    /* -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg); */
+}
+
+.links p.demo::after{
+    width:56px;   
+}
+.links p.linkage::after {
+    width:47px;
+}
+.links p.imagery::after {
+    width:60px;
+}
+
 .links a:hover i::after {
     background-color: #8C5F66;
+}
+.links a:hover p::after {
+    background-color: #FFFAF6;
 }
 
 .portfolio-info {
