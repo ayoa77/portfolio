@@ -151,7 +151,8 @@ app.use(function varsForPug(req, res, next) {
 
 app.get("/robots.txt", function(req, res) {
   res.type("text/plain");
-  res.send("User-agent: *\nDisallow: /");
+  // res.send("User-agent: *\nDisallow: /");
+  res.send("User-agent: *\nDisallow: ");
 });
 
 // Routes which should handle requests
