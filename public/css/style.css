@@ -307,7 +307,7 @@ ul.list-check li::before {
 
 
 #home {
-	background: url(../images/home2.jpg) no-repeat center center;
+	background: url(../images/home992.jpg) no-repeat center center;
 	-webkit-background-attachment: fixed;
     background-attachment: fixed;
 	background-color: #1D201F;
@@ -315,6 +315,7 @@ ul.list-check li::before {
 	padding: 0;
 	position: relative;
 }
+
 #home:before {
 	content: "";
 	background-color: rgba(29, 32, 31, 0.85);
@@ -815,8 +816,18 @@ Resume Timeline
 
 
 
+@media(min-width:1501px) {
+#home {
+
+    background: url(../images/home2.jpg) no-repeat top center;
+}
+}
 
 @media(min-width:992px) {
+#home {
+    background: url(../images/home1500.jpg) no-repeat center center;
+}
+
 .timeline:before {
     left: 50%;
 }
