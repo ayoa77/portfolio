@@ -1,0 +1,155 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Author:
+% Claud D. Park <posquit0.bj@gmail.com>
+% http://www.posquit0.com
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Configuration
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Themes: Awesome-CV
+\documentclass[]{awesome-cv}
+\usepackage{textcomp}
+%%% Override a directory location for fonts(default: 'fonts/')
+\fontdir[fonts/]
+
+%%% Configure a directory location for sections
+\newcommand*{\sectiondir}{resume/}
+
+%%% Override color
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+%% Color for highlight
+% Define your custom color if you don't like awesome colors
+\colorlet{awesome}{awesome-red}
+%\definecolor{awesome}{HTML}{CA63A8}
+%% Colors for text
+%\definecolor{darktext}{HTML}{414141}
+%\definecolor{text}{HTML}{414141}
+%\definecolor{graytext}{HTML}{414141}
+%\definecolor{lighttext}{HTML}{414141}
+
+%%% Override a separator for social informations in header(default: ' | ')
+%\headersocialsep[\quad\textbar\quad]
+    \begin{document}
+    
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Profile
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{center}
+	\headerfirstnamestyle{Ayo} \headerlastnamestyle{Amadi} \\
+	\vspace{2mm}
+	{\faEnvelope\ ayodeleamadi@gmail.com} | {\faMobile\ (347) 687-8841} | {\faMapMarker\ Parsons, KS} | {\faLink\ https://ayo.works/\#works}
+\end{center}
+\cvsection{Projects}
+\begin{cventries}
+	\cventry
+	{An E-Commerce marketplace with ten user types and a non-hierarchal permissions system. Brand distributors, distributors, and people that wanted to sell or lease their goods could all use the site to sell bags and/or travel accessories.}
+	{Luggage Relay}
+	{Node.js, Express, MongoDB, Javascript, HTML5, SCSS}
+	{https://luggagerelay.com/en?location=tw}
+	{}
+	
+	\vspace{-5mm}
+	\cventry
+	{A multi-language, blog-style, business card application with search functionality for their product reviews and their self submitted articles/posts. I used our companies proprietary CMS that I built and extended on due to the use of indexing on the summernote based wysiwig descriptions. Instead of allowing summernote to add it\textquotesingle{}s extremely long Base64 string for the uploaded images, I interrupted this process uploaded the image to the server and then replaced the base64 string with the image url. This increased the write speed by 300\% on average, and the search speed by 250\% on average.}
+	{Petbond}
+	{Node.js, Express, MongoDB, React.js, Summernote}
+	{petbond.com.tw}
+	{}
+	
+	\vspace{-5mm}
+	\cventry
+	{This was a wrapper that connected via an api with the client\textquotesingle{}s artificial intelligence based crypto-currency. Their customer\textquotesingle{}s could sign-up, commit to purchasing Jarvis. After purchasing the Jarvis, their account would be updated with the amount of Jarvis that they had purchased. I recommended and implemented an almost full user sign-up suite with an email-verification and a forgot-password flow. I also coded out a kyc - know your customer functionality, but was never deployed due to legality issues.}
+	{Jarvis an AI Powered Cryptocurrency}
+	{Node.js, Express, MongoDB, Javascript, SCSS}
+	{https://ayo.works/videos/jarvis.mp4}
+	{}
+	
+	\vspace{-5mm}
+	\cventry
+	{This is an E-Commerce site built with ruby on rails and Spree. This had some unique challenges as the client wanted to list their juices, but only wanted for clients to be able to deliver in multiples of six. The solution I settled on was to allow 6 juices to be added individually in a Build Your Own Box option.}
+	{Canopy - Juice Delivery}
+	{Ruby, Ruby on Rails, HTML5, Javascript, SCSS}
+	{canopy.flexstudio.io}
+	{}
+	
+	\vspace{-5mm}
+\end{cventries}
+\cvsection{Technical Skills}
+\begin{cventries}
+	\cventry
+	{}
+	{\def\arraystretch{1.15}{\begin{tabular}{ l l }
+		Programming Languages:  & {\skill{ JavaScript \& Node.js, Ruby \& Ruby on Rails, React}} \\
+		Databases:  & {\skill{ SQL - MySQL \& PostgreSQL, NoSQL - MongoDB \& Redis, Back-Up/Restore/Replication}} \\
+		Servers:  & {\skill{ Google Cloud, AWS, Debian}} \\
+		Workflow:  & {\skill{ Visual Studio Code, JIRA, Trello}} \\
+		Methodologies:  & {\skill{ Waterfall, Agile/Scrum, Kanban}} \\
+		\end{tabular}}}
+	{}
+	{}
+	{}
+\end{cventries}
+
+
+\vspace{-7mm}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Experience
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\cvsection{Work}
+\begin{cventries}
+	\cventry
+	{Software Engineer}
+	{Frankish International}
+	{Taipei, TW}
+	{July 2017 – Present}
+	{\begin{cvitems}
+		\item {Breaking down client needs into technical solutions, executing said technical solutions, and then relaying this results back to client in an understandable manner.}
+		\item {Helping to dictate technologies used for various projects.}
+		\item {Setting up production environments on Google Cloud or Linode depending on the size and scale-potential of the project.}
+		\item {Learning new tech when necessary for the project}
+		\end{cvitems}}
+	\cventry
+	{Teacher}
+	{RMIT}
+	{Ho Chi Minh City, Vietnam}
+	{Sep 2015 – Dec 2016}
+	{\begin{cvitems}
+		\item {Created and executed lessons targeted at students who wish to study at an English-Speaking university}
+		\item {Created lessons for self-study}
+		\end{cvitems}}
+\end{cventries}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Education
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\cvsection{Education}
+\begin{cventries}
+	\cventry
+	{Bachelor of Arts}
+	{University of Kansas}
+	{Lawrence, KS}
+	{December 2013}
+	{}
+	\cventry
+	{Software Development Certificate in Full Stack Engineering}
+	{Next Academy}
+	{Kuala Lumpur, Malaysia}
+	{Apr 2017}
+	{}
+\end{cventries}
+
+\vspace{-2mm}
+
+\ 
+\end{document}

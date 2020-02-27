@@ -10,13 +10,32 @@ router.get("/", csrfProtection, (req, res, next) => {
 });
 
 router.get('/download', function (req, res) {
+    var fileUrl = "./public/cv/ResumeAyoAmadi.pdf";
+    var fileName = "ResumeAyoAmadi.pdf";
 
-    var file = fs.createReadStream('./public/cv/AmadiResume.pdf');
-    var stat = fs.statSync('./public/cv/AmadiResume.pdf');
+    if(req.query.location === 'tw') {
+        fileUrl = "./public/cv/AmadiCV.pdf";
+        fileName = "AmadiCV.pdf";
+    }
+    
+    var file = fs.createReadStream(fileUrl);
+    var stat = fs.statSync(fileUrl);
     res.setHeader('Content-Length', stat.size);
-    res.setHeader('Content-Type', 'application/pdf');
-    res.setHeader('Content-Disposition', 'attachment; filename=AmadiResume.pdf');
+    res.setHeader('Content-Disposition', `attachment; filename=${fileName}`);
     file.pipe(res);
+});
+
+router.get('/browser_language', function (req, res) {
+      var browserLang = req.acceptsLanguages(
+        "zh-TW",
+        "zh"
+      );
+      var tw = false;
+    if (browserLang) tw = true;
+    console.log(browserLang);
+    return res.status(200).json({
+        tw: tw
+      });
 });
 
 

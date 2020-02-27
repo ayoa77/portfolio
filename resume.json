@@ -1,0 +1,144 @@
+{
+  "selectedTemplate": 2,
+  "headings": {
+    "education": "Education",
+    "awards": "",
+    "work": "Work",
+    "projects": "Projects"
+  },
+  "basics": {
+    "name": "Ayo Amadi",
+    "email": "ayodeleamadi@gmail.com",
+    "phone": "(347) 687-8841",
+    "website": "https://ayo.works/#works",
+    "location": {
+      "address": "Parsons, KS"
+    }
+  },
+  "education": [
+    {
+      "institution": "University of Kansas",
+      "location": "Lawrence, KS",
+      "studyType": "Bachelor of Arts",
+      "startDate": "",
+      "endDate": "December 2013",
+      "gpa": ""
+    },
+    {
+      "institution": "Next Academy",
+      "location": "Kuala Lumpur, Malaysia",
+      "studyType": "Software Development Certificate",
+      "area": "Full Stack Engineering",
+      "endDate": "Apr 2017"
+    }
+  ],
+  "work": [
+    {
+      "location": "Taipei, TW",
+      "position": "Software Engineer",
+      "website": "",
+      "startDate": "July 2017",
+      "endDate": "Present",
+      "highlights": [
+        "Breaking down client needs into technical solutions, executing said technical solutions, and then relaying this results back to client in an understandable manner.",
+        "Helping to dictate technologies used for various projects.",
+        "Setting up production environments on Google Cloud or Linode depending on the size and scale-potential of the project.",
+        "Learning new tech when necessary for the project "
+      ],
+      "company": "Frankish International"
+    },
+    {
+      "highlights": [
+        "Created and executed lessons targeted at students who wish to study at an English-Speaking university ",
+        "Created lessons for self-study"
+      ],
+      "company": "RMIT",
+      "position": "Teacher",
+      "location": "Ho Chi Minh City, Vietnam",
+      "startDate": "Sep 2015",
+      "endDate": "Dec 2016"
+    }
+  ],
+  "skills": [
+    {
+      "name": "",
+      "level": "",
+      "keywords": [
+        ""
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "description": "An E-Commerce marketplace with ten user types and a non-hierarchal permissions system. Brand distributors,  distributors, and people that wanted to sell or lease their goods could all use the site to sell bags and/or travel accessories.",
+      "highlights": [
+          "Created and executed lessons targeted at students who wish to study at an English-Speaking university ",
+          "Created lessons for self-study"
+        ],
+      "keywords": [
+        "Node.js",
+        "Express",
+        "MongoDB",
+        "Javascript",
+        "HTML5",
+        "SCSS"
+      ],
+      "name": "Luggage Relay",
+      "url": "https://luggagerelay.com/en?location=tw"
+    },
+    {
+      "keywords": [
+        "Node.js",
+        "Express",
+        "MongoDB",
+        "React.js",
+        "Summernote",
+        ""
+      ],
+      "name": "Petbond",
+      "description": "A multi-language, blog-style, business card application with search functionality for their product reviews and their self submitted articles/posts. I used our companies proprietary CMS that I built and extended on due to the use of indexing on the summernote based  wysiwig descriptions. Instead of allowing summernote to add it's extremely long Base64 string for the uploaded images, I interrupted this process uploaded the image to the server and then replaced the base64 string with the image url. This increased the write speed by 300% on average, and the search speed by 250% on average.",
+      "url": "petbond.com.tw"
+    },
+    {
+      "keywords": [
+        "Node.js",
+        "Express",
+        "MongoDB",
+        "Javascript",
+        "SCSS"
+      ],
+      "name": "Jarvis an AI Powered Cryptocurrency",
+      "url": "https://ayo.works/videos/jarvis.mp4",
+      "description": "This was a wrapper that connected via an api with the client's artificial intelligence based crypto-currency. Their customer's could sign-up, commit to purchasing Jarvis. After purchasing the Jarvis, their account would be updated with the amount of Jarvis that they had purchased. I recommended and implemented an almost full user sign-up suite with an email-verification and a forgot-password flow. I also coded out a kyc - know your customer functionality, but was never deployed due to legality issues."
+    },
+    {
+      "keywords": [
+        "Ruby",
+        "Ruby on Rails",
+        "HTML5",
+        "Javascript",
+        "SCSS"
+      ],
+      "name": "Canopy - Juice Delivery",
+      "description": "This is an E-Commerce site built with ruby on rails and Spree. This had some unique challenges as the client wanted to list their juices, but only wanted for clients to be able to deliver in multiples of six. The solution I settled on was to allow 6 juices to be added individually in a Build Your Own Box option. ",
+      "url": "canopy.flexstudio.io"
+    }
+  ],
+  "awards": [
+    {
+      "title": "",
+      "date": "",
+      "awarder": "",
+      "summary": ""
+    }
+  ],
+  "sections": [
+    "templates",
+    "profile",
+    "projects",
+    "work",
+    "education",
+    "skills",
+    "awards"
+  ]
+}

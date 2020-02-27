@@ -135,8 +135,11 @@ html(lang='en')
                   strong Nationality:
                   p.pull-right  American
                 li
-                  strong Phone: 
+                  strong US Phone: 
                   a.pull-right(href='tel:+13476878841', data-rel='external') +1 347 687 8841
+                li
+                  strong TW Phone:
+                  a.pull-right(href='tel:+886975878441', data-rel='external') +886 975 878 441
                 li
                   strong Email: 
                   a.pull-right(href='mailto:ayodeleamadi@gmail.com', data-rel='external') ayodeleamadi@gmail.com
@@ -164,9 +167,9 @@ html(lang='en')
                 i.fa.fa-paper-plane
                 | Send me a message
                 //-need to set up uploads and download for my cv here...make  available :)
-              a.btn.btn-primary.btn-lg(href='/download')
+              a#download-cv-link.btn.btn-primary.btn-lg(href='/download')
                 i.fa.fa-download
-                | Download my CV
+                | Download my Resume
         // /.row
       // /.container
     // End About Section
@@ -779,8 +782,9 @@ html(lang='en')
                   strong Location
                   //- |                   Near National Taiwan University
                   //- br
-                  |                   Parsons, KS
+                  |                   Brooklyn, NY
                   br
+                  |                   Taipei, TW
               .col-sm-6
                 i.fa.fa-mobile
                 .contact-number
@@ -791,7 +795,7 @@ html(lang='en')
             .row
               .col-sm-12
                 .location-map
-                  iframe(width="100%" height="325" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDLNZvOMOpoSHBthHfnHeXk4b5IEqW-vOs&q='Parsons, KS&zoom=16")         // /
+                  iframe(width="100%" height="325" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDLNZvOMOpoSHBthHfnHeXk4b5IEqW-vOs&q='Brooklyn,NY&zoom=16")         // /
             .row
       // /.container
     // End Contact Section
@@ -823,6 +827,19 @@ html(lang='en')
     script(src='/js/jquery.fitvids.js')
     script(src='/js/scripts.js')
   script.
+    $(document).ready(
+      function(){
+        $.get('/browser_language').done(function(data){
+          console.log(data);
+          console.log(!!data.us);
+          if(data.tw){
+            console.log(data.tw);
+            $('#download-cv-link').html('DOWNLOAD MY CV');
+            $("#download-cv-link").attr("href", "/download?location=tw");
+          }
+        })
+      }
+    )
     var formSubmit = function(event){
       event.preventDefault();
       var input = $( '#contactForm' ).serialize();

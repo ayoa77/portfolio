@@ -1,0 +1,149 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Author:
+% Claud D. Park <posquit0.bj@gmail.com>
+% http://www.posquit0.com
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Configuration
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Themes: Awesome-CV
+\documentclass[]{awesome-cv}
+\usepackage{textcomp}
+%%% Override a directory location for fonts(default: 'fonts/')
+\fontdir[fonts/]
+
+%%% Configure a directory location for sections
+\newcommand*{\sectiondir}{resume/}
+
+%%% Override color
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+%% Color for highlight
+% Define your custom color if you don't like awesome colors
+\colorlet{awesome}{awesome-red}
+%\definecolor{awesome}{HTML}{CA63A8}
+%% Colors for text
+%\definecolor{darktext}{HTML}{414141}
+%\definecolor{text}{HTML}{414141}
+%\definecolor{graytext}{HTML}{414141}
+%\definecolor{lighttext}{HTML}{414141}
+
+%%% Override a separator for social informations in header(default: ' | ')
+%\headersocialsep[\quad\textbar\quad]
+    \begin{document}
+    
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Profile
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{center}
+	\headerfirstnamestyle{Ayo} \headerlastnamestyle{Amadi} \\
+	\vspace{2mm}
+	{\faEnvelope\ ayodeleamadi@gmail.com} | {\faMobile\ (347) 687-8841} | {\faMapMarker\ Parsons, KS} | {\faLink\ https://ayo.works/\#works}
+\end{center}
+\cvsection{Projects}
+\begin{cventries}
+	\cventry
+	{{A multi-language, multi-country, travel E-Commerce marketplace with a  non-hierarchical permissions function. Brand distributors, distributors, and people that wanted to sell or lease their goods can all use the site to sell bags and/or travel accessories.}
+	    \vspace{5mm}
+		{\begin{cvitems}
+    	\item {Improved search/read performance by 250\% by creating a string with all searchable keywords on the parent item}
+    	\item {Built a custom permissions middleware to deal with the different user types and the different parts of the site that they could access.}
+    	\item {Extended upon a pre-made drag and drop library to change the order of a product's images.}
+    	\item {Custom locale and language functionality}
+    	\item {Used the observer design pattern to create a robust notifications and emails system.}
+    	\item {Integrated both paypal and O'pay to take online credit card payments }
+	    \end{cvitems}}\vspace{-7mm}}
+	{Luggage Relay}
+	{Node.js, Express, MongoDB, Javascript, HTML5, SCSS}
+	{https://luggagerelay.com/en?location=tw}
+	{}
+	\cventry
+	{{A multi-language, blog-style, business card application with search functionality for their product reviews and their self submitted articles/posts.}
+	    \vspace{5mm}
+		{\begin{cvitems}
+    	\item { I used our companies proprietary CMS that I built and extended on due to the use of indexing on the summernote based wysiwig descriptions. }
+    	\item {Instead of allowing summernote to add it\textquotesingle{}s extremely long Base64 string for the uploaded images, I interrupted this process uploaded the image to the server and then replaced the base64 string with the image url. This increased the write speed by 300\% on average, and the search speed by 250\% on average.}
+	\end{cvitems}}\vspace{-7mm}}
+	{Petbond}
+	{Node.js, Express, MongoDB, React.js, Summernote}
+	{petbond.com.tw}
+	{}
+	\cventry
+	{{This was a wrapper that connected via an api with the client\textquotesingle{}s artificial intelligence based crypto-currency.}
+	    \vspace{5mm}
+		{\begin{cvitems}
+    	\item { Recommended and implemented an almost full user sign-up suite with an email-verification and a forgot-password flow.}
+    	\item { Coded out a kyc - know your customer functionality, but was never deployed due to legality issues..}
+	\end{cvitems}}\vspace{-7mm}}
+	{Jarvis}
+	{Node.js, Express, MongoDB, Javascript, SCSS}
+	{https://ayo.works/videos/jarvis.mp4}
+	{}
+	\cventry
+	{{This is a juice delivery E-Commerce site built with ruby on rails and Spree. This had some unique challenges as the client wanted to list their juices, but only wanted for clients to be able to deliver in multiples of six. The solution I settled on was to allow 6 juices to be added individually in a Build Your Own Box option.}
+    \vspace{-5mm}}
+	{Canopy - Juice Delivery}
+	{Ruby, Ruby on Rails, HTML5, Javascript, SCSS}
+	{canopy.flexstudio.io}
+	{}
+
+\end{cventries}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Experience
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\cvsection{Work}
+\begin{cventries}
+	\cventry
+	{Software Engineer}
+	{Frankish International}
+	{Taipei, TW}
+	{July 2017 – Present}
+	{\begin{cvitems}
+		\item {Breaking down client needs into technical solutions, executing said technical solutions, and then relaying this results back to client in an understandable manner.}
+		\item {Helping to dictate technologies used for various projects.}
+		\item {Setting up production environments on Google Cloud or Linode depending on the size and scale-potential of the project.}
+		\item {Learning new tech when necessary for the project}
+		\end{cvitems}}
+% 	\cventry
+% 	{Teacher}
+% 	{RMIT}
+% 	{Ho Chi Minh City, Vietnam}
+% 	{Sep 2015 – Dec 2016}
+% 	{\begin{cvitems}
+% 		\item {Created and executed lessons targeted at students who wish to study at an English-Speaking university}
+% 		\item {Created lessons for self-study}
+% 		\end{cvitems}}
+\end{cventries}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Education
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\cvsection{Education}
+\begin{cventries}
+	\cventry
+	{Software Development Certificate in Full Stack Engineering}
+	{Next Academy}
+	{Kuala Lumpur, Malaysia}
+	{Apr 2017}
+	{}
+	\cventry
+	{Bachelor of Arts}
+	{University of Kansas}
+	{Lawrence, KS}
+	{December 2013}
+	{}
+\end{cventries}
+
+\vspace{-2mm}
+
+\end{document}
