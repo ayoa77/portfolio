@@ -177,3 +177,55 @@ app.use("/pres", presRoutes);
 app.use("/email", emailRoutes);
 
 app.listen(port, () => console.log(`Listening on port ${port}`));
+
+
+let Person = class {
+  constructor(firstName, lastName) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+  }
+};
+
+
+function isBeautifulString(inputString) {
+  inputString += "abcdefghijklmnopqrstuvwxyz";
+  inputString = inputString.split("").sort();
+  myHash = loopToCountOccurences(inputString);
+  previousLetterCount = Number.MAX_SAFE_INTEGER;
+  console.log(inputString);
+  for (const myLetter in myHash) {
+    if (previousLetterCount > myHash[myLetter]) {
+      previousLetterCount = myHash[myLetter];
+      // console.log("if", inputString)
+      console.log(previousLetterCount, myLetter, myHash[myLetter])
+    } else if (previousLetterCount === myHash[myLetter]) {
+      previousLetterCount = myHash[myLetter];
+      // console.log("else if", inputString)
+       console.log(previousLetterCount, myLetter, myHash[myLetter])
+    } else {
+      // console.log("else", inputString)
+      console.log(previousLetterCount, myLetter, myHash[myLetter])
+      return false;
+    }
+  }
+  return true;
+}
+
+function loopToCountOccurences(inputString) {
+  let myHash = {};
+  for (let i = 0; i < inputString.length; i++) {
+    if (myHash[inputString[i]] > 0) {
+      myHash[inputString[i]]++;
+    } else {
+      myHash[inputString[i]] = 0;
+    }
+  }
+  return myHash;
+}
+
+printNum(150);
+
+function printNum(){
+  console.log(num);
+  var num = 5;
+}
