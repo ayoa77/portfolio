@@ -10,8 +10,8 @@ router.get("/", csrfProtection, (req, res, next) => {
 });
 
 router.get('/download', function (req, res) {
-    var fileUrl = "./public/cv/ResumeAyoAmadi.pdf";
-    var fileName = "ResumeAyoAmadi.pdf";
+    var fileUrl = "./public/cv/AyoResume.pdf";
+    var fileName = "AyoResume.pdf";
 
     if(req.query.location === 'tw') {
         fileUrl = "./public/cv/AmadiCV.pdf";
