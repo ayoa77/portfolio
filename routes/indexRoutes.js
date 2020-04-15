@@ -14,8 +14,8 @@ router.get('/download', function (req, res) {
     var fileName = "AyoResume.pdf";
 
     if(req.query.location === 'tw') {
-        fileUrl = "./public/cv/AmadiCV.pdf";
-        fileName = "AmadiCV.pdf";
+        fileUrl = "./public/cv/AmadiResume.pdf";
+        fileName = "AmadiResume.pdf";
     }
     
     var file = fs.createReadStream(fileUrl);
