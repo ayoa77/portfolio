@@ -795,7 +795,7 @@ html(lang='en')
             .row
               .col-sm-12
                 .location-map
-                  iframe#location-map(width="100%" height="325" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDLNZvOMOpoSHBthHfnHeXk4b5IEqW-vOs&q='Kansas&zoom=16")
+                  iframe#location-map(width="100%" height="325" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDLNZvOMOpoSHBthHfnHeXk4b5IEqW-vOs&q='Kansas&zoom=4")
             .row
       // /.container
     // End Contact Section
@@ -833,7 +833,7 @@ html(lang='en')
           if(data.tw){
             $('#download-cv-link').html('DOWNLOAD MY CV');
             $("#download-cv-link").attr("href", "/download?location=tw");
-            $("#location-map").attr("src", "https://www.google.com/maps/embed/v1/place?key=AIzaSyDLNZvOMOpoSHBthHfnHeXk4b5IEqW-vOs&q='Taipei,TW'&zoom=16");
+            $("#location-map").attr("src", "https://www.google.com/maps/embed/v1/place?key=AIzaSyDLNZvOMOpoSHBthHfnHeXk4b5IEqW-vOs&q='Taipei,TW'&zoom=10");
           }
         })
       }
