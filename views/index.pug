@@ -782,7 +782,7 @@ html(lang='en')
                   strong Location
                   //- |                   Near National Taiwan University
                   //- br
-                  |                   Brooklyn, NY
+                  |                   Kansas
                   br
                   |                   Taipei, TW
               .col-sm-6
@@ -795,7 +795,7 @@ html(lang='en')
             .row
               .col-sm-12
                 .location-map
-                  iframe(width="100%" height="325" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDLNZvOMOpoSHBthHfnHeXk4b5IEqW-vOs&q='Brooklyn,NY&zoom=16")         // /
+                  iframe#location-map(width="100%" height="325" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDLNZvOMOpoSHBthHfnHeXk4b5IEqW-vOs&q='Kansas&zoom=16")
             .row
       // /.container
     // End Contact Section
@@ -830,12 +830,10 @@ html(lang='en')
     $(document).ready(
       function(){
         $.get('/browser_language').done(function(data){
-          console.log(data);
-          console.log(!!data.us);
           if(data.tw){
-            console.log(data.tw);
             $('#download-cv-link').html('DOWNLOAD MY CV');
             $("#download-cv-link").attr("href", "/download?location=tw");
+            $("#location-map").attr("src", "https://www.google.com/maps/embed/v1/place?key=AIzaSyDLNZvOMOpoSHBthHfnHeXk4b5IEqW-vOs&q='Taipei,TW'&zoom=16");
           }
         })
       }
