@@ -1,23 +1,23 @@
 const crypto = require('crypto');
-const mongoose = require('mongoose');
+// const mongoose = require('mongoose');
 
-const { Schema } = mongoose;
+// const { Schema } = mongoose;
 
-const UsersSchema = new Schema({
-    email: String,
-    hash: String,
-    salt: String,
-});
+// const UsersSchema = new Schema({
+//     email: String,
+//     hash: String,
+//     salt: String,
+// });
 
-UsersSchema.methods.setPassword = function (password) {
-    this.salt = crypto.randomBytes(16).toString('hex');
-    this.hash = crypto.pbkdf2Sync(password, this.salt, 10000, 512, 'sha512').toString('hex');
-};
+// UsersSchema.methods.setPassword = function (password) {
+//     this.salt = crypto.randomBytes(16).toString('hex');
+//     this.hash = crypto.pbkdf2Sync(password, this.salt, 10000, 512, 'sha512').toString('hex');
+// };
 
-UsersSchema.methods.validatePassword = function (password) {
-    const hash = crypto.pbkdf2Sync(password, this.salt, 10000, 512, 'sha512').toString('hex');
-    return this.hash === hash;
-};
+// UsersSchema.methods.validatePassword = function (password) {
+//     const hash = crypto.pbkdf2Sync(password, this.salt, 10000, 512, 'sha512').toString('hex');
+//     return this.hash === hash;
+// };
 
 // UsersSchema.methods.generateJWT = function () {
 //     const today = new Date();
@@ -39,4 +39,4 @@ UsersSchema.methods.validatePassword = function (password) {
 //     };
 // };
 
-mongoose.model('Users', UsersSchema);
+// mongoose.model('Users', UsersSchema);

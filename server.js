@@ -3,7 +3,7 @@ const express = require("express");
 const app = express();
 const bodyParser = require("body-parser");
 const port = process.env.PORT || 3000;
-const mongoose = require("mongoose");
+// const mongoose = require("mongoose");
 const path = require("path");
 const fs = require("fs");
 const morgan = require("morgan");
@@ -93,31 +93,31 @@ fs.readdirSync(__dirname + "/models").forEach(function(filename) {
 });
 
 // Connect to the db
-if ("development" == app.get("env")) {
-  console.log("you are running in dev mode");
-  mongoose
-    .connect("mongodb://localhost/ebs-pets?socketTimeoutMS=100000")
-    .then(() => {
-      console.log("Connected to Database");
-    })
-    .catch(err => {
-      console.log("Not Connected to Database ERROR! ", err);
-    });
-  app.locals.pretty = true;
-} else if ("production") {
-  const mongo_host = process.env.mongo_host
-  console.log("you are running in production");
-  mongoose
-    .connect(mongo_host)
-    .then(() => {
-      console.log("Connected to Database");
-    })
-    .catch(err => {
-      console.log("Not Connected to Database ERROR! ", err);
-    });
-}
+// if ("development" == app.get("env")) {
+//   console.log("you are running in dev mode");
+//   mongoose
+//     .connect("mongodb://localhost/ebs-pets?socketTimeoutMS=100000")
+//     .then(() => {
+//       console.log("Connected to Database");
+//     })
+//     .catch(err => {
+//       console.log("Not Connected to Database ERROR! ", err);
+//     });
+//   app.locals.pretty = true;
+// } else if ("production") {
+//   const mongo_host = process.env.mongo_host
+//   console.log("you are running in production");
+//   mongoose
+//     .connect(mongo_host)
+//     .then(() => {
+//       console.log("Connected to Database");
+//     })
+//     .catch(err => {
+//       console.log("Not Connected to Database ERROR! ", err);
+//     });
+// }
 
-mongoose.Promise = global.Promise;
+// mongoose.Promise = global.Promise;
 
 /**
  * Put some variables for ejs to use
