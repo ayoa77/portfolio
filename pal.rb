@@ -14,6 +14,7 @@ def pal(a,left=0,right=a.size-1)
   else
     puts left
     puts right
+    puts right
     return false    
   end
 end
