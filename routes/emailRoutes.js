@@ -11,7 +11,7 @@ var mailgun = require('mailgun-js')({ apiKey: api_key, domain: domain });
 
 
 router.post('/', csrfProtection, (req, res, next) => {
-  emailBody = `
+  emailBody = ` F
         
 		 Email: ${req.body.email} 
 		

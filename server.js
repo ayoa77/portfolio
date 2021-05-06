@@ -105,9 +105,10 @@ if ("development" == app.get("env")) {
     });
   app.locals.pretty = true;
 } else if ("production") {
+  const mongo_host = process.env.mongo_host
   console.log("you are running in production");
   mongoose
-    .connect("ebs-pets:pets1234EBS@localhost:27017/ebs?authSource=admin")
+    .connect(mongo_host)
     .then(() => {
       console.log("Connected to Database");
     })
